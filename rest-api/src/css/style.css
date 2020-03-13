@@ -35,4 +35,10 @@
   font-weight: 500;
   border-radius: 20px;
   font-size: 20px;
+  transition-duration: .5s;
+  outline: none;
+}
+
+.buttons-wrapper__input:active {
+  box-shadow: inset 0px 0px 7px 1px #000;
 }
