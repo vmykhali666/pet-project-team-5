@@ -36,8 +36,8 @@ function Bubble(w, h) {
   };
 }
 
-canvas.width = window.innerWidth * 0.8;
-canvas.height = window.innerHeight * 0.5;
+canvas.width = 800;
+canvas.height = 600;
 
 Bubble.prototype.borderColapse = function() {
   if (this.x >= canvas.width || this.x <= 0) {
@@ -96,7 +96,7 @@ Bubble.prototype.collisionDetect = function() {
 };
 
 canvas.addEventListener("click", () => {
-  allBubbles.push(new Bubble(event.pageX, event.pageY));
+  allBubbles.push(new Bubble(event.offsetX, event.offsetY));
 });
 let lastID;
 function loop() {
