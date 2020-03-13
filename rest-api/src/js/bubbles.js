@@ -9,7 +9,7 @@ const options = {
   backgroundColor: "#222",
   defaultBubbleColor: "#fff",
 
-  bubbelRadius: 2,
+  bubbelRadius: 5,
   addRadius: randomiser(4),
 
   defaultSpeed: 1,
@@ -36,8 +36,8 @@ function Bubble(w, h) {
   };
 }
 
-canvas.width = window.innerWidth * 0.8;
-canvas.height = window.innerHeight * 0.5;
+canvas.width = 800;
+canvas.height = 600;
 
 Bubble.prototype.borderColapse = function() {
   if (this.x >= canvas.width || this.x <= 0) {
@@ -55,7 +55,7 @@ Bubble.prototype.update = function() {
 Bubble.prototype.drow = function() {
   context.beginPath();
   context.fillStyle = this.bubbleColor;
-  context.arc(this.x, this.y, this._bubbleRadius, 0, Math.PI * 3);
+  context.arc(this.x, this.y, this._bubbleRadius, 0, Math.PI * 2);
   context.fill();
 };
 Bubble.prototype.collisionDetect = function() {
@@ -88,7 +88,7 @@ Bubble.prototype.collisionDetect = function() {
 };
 
 canvas.addEventListener("click", () => {
-  allBubbles.push(new Bubble(event.pageX, event.pageY));
+  allBubbles.push(new Bubble(event.offsetX, event.offsetY));
 });
 let lastID;
 function loop() {
