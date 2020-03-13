@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.canvas {
-  background-color: rgb(32, 32, 32);
-}
+
 .canvas-container {
   border: 1px solid black;
   width: 100%;
