@@ -6,10 +6,10 @@ let isDead = false;
 let allBubbles = [];
 
 const options = {
-  backgroundColor: "#222",
+  backgroundColor: "#111",
   defaultBubbleColor: "#fff",
 
-  bubbelRadius: 2,
+  bubbelRadius: 5,
   addRadius: randomiser(4),
 
   defaultSpeed: 1,
@@ -55,7 +55,7 @@ Bubble.prototype.update = function() {
 Bubble.prototype.drow = function() {
   context.beginPath();
   context.fillStyle = this.bubbleColor;
-  context.arc(this.x, this.y, this._bubbleRadius, 0, Math.PI * 3);
+  context.arc(this.x, this.y, this._bubbleRadius, 0, Math.PI * 2);
   context.fill();
 };
 Bubble.prototype.collisionDetect = function() {
@@ -74,7 +74,15 @@ Bubble.prototype.collisionDetect = function() {
           this.direction.x *= -1;
         }
 
-        allBubbles[j].bubbleColor = this.bubbleColor =
+        allBubbles[j].bubbleColor =
+          "rgb(" +
+          randomiser(255) +
+          "," +
+          randomiser(255) +
+          "," +
+          randomiser(255) +
+          ")";
+        this.bubbleColor =
           "rgb(" +
           randomiser(255) +
           "," +
