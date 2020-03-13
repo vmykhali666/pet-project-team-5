@@ -6,7 +6,7 @@ let isDead = false;
 let allBubbles = [];
 
 const options = {
-  backgroundColor: "#222",
+  backgroundColor: "#111",
   defaultBubbleColor: "#fff",
 
   bubbelRadius: 5,
@@ -74,7 +74,15 @@ Bubble.prototype.collisionDetect = function() {
           this.direction.x *= -1;
         }
 
-        allBubbles[j].bubbleColor = this.bubbleColor =
+        allBubbles[j].bubbleColor =
+          "rgb(" +
+          randomiser(255) +
+          "," +
+          randomiser(255) +
+          "," +
+          randomiser(255) +
+          ")";
+        this.bubbleColor =
           "rgb(" +
           randomiser(255) +
           "," +
