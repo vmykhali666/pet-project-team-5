@@ -35,17 +35,17 @@
 }
 
 .buttons-wrapper__input {
+  background-color: bisque;
   width: 60%;
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 20px;
   font-size: 20px;
+  transition-duration: .5s;
   outline: none;
-  border: none;
-  background-color: bisque;
 }
 
-.buttons-wrapper__reset {
-  background-color: bisque;
+.buttons-wrapper__input:active {
+  box-shadow: inset 0px 0px 7px 1px #000;
 }
