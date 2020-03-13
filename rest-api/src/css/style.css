@@ -24,7 +24,7 @@
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(68, 130, 167);
   /* background-color: linear-gradient(purple 0, violet 10%, ); */
@@ -34,18 +34,22 @@
   width: 100%;
 }
 
+/* .button-background:focus {
+  
+} */
+
 .buttons-wrapper__input {
+  background-color: bisque;
   width: 60%;
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 20px;
   font-size: 20px;
+  transition-duration: .2s;
   outline: none;
-  border: none;
-  background-color: bisque;
 }
 
-.buttons-wrapper__reset {
-  background-color: bisque;
+.buttons-wrapper__input:active {
+  box-shadow: inset 0px 0px 7px 1px #000;
 }
