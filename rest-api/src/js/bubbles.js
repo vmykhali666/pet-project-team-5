@@ -87,6 +87,7 @@ Bubble.prototype.collisionDetect = function() {
   }
 };
 
+
 canvas.addEventListener("click", () => {
   allBubbles.push(new Bubble(event.offsetX, event.offsetY));
 });
@@ -102,6 +103,8 @@ function loop() {
   lastID = window.requestAnimationFrame(loop);
 }
 lastID = window.requestAnimationFrame(loop);
+
+// reset.addEventListener(mouse)
 reset.addEventListener("click", () => {
   context.fillStyle = options.backgroundColor;
   context.fillRect(0, 0, canvas.width, canvas.height);
@@ -109,3 +112,4 @@ reset.addEventListener("click", () => {
   window.cancelAnimationFrame(lastID);
   lastID = window.requestAnimationFrame(loop);
 });
+
