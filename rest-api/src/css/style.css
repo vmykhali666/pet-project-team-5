@@ -26,13 +26,26 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-color: rgb(68, 130, 167);
+  /* background-color: linear-gradient(purple 0, violet 10%, ); */
+}
+.button-background {
+  height: 45%;
+  width: 100%;
 }
 
 .buttons-wrapper__input {
+  background-color: bisque;
   width: 60%;
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 20px;
   font-size: 20px;
+  transition-duration: .5s;
+  outline: none;
+}
+
+.buttons-wrapper__input:active {
+  box-shadow: inset 0px 0px 7px 1px #000;
 }
