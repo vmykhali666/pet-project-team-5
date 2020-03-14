@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+.header__wrapper-block {
+  padding: 0 96px;
+  background-color: white;
+  background-image: url(../img/header2img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+
+  flex-basis: 100%;
+}
+
+ul {
+  display: flex;
+  width: 620px;
+  justify-content: space-between;
+}
+
+.section_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 38px 0 201px 0;
+}
+
+.nav-link {
+  display: block;
+  color: #191919;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #10c9c3;
+}
+
+.header-content {
+  margin-top: 171px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content h1 {
+  color: #1d1d1d;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.header-content p {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.09px;
+  margin-top: 15px;
+}
+
+.header-content button {
+  margin-top: 20px;
+  width: 180px;
+  height: 54px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  background-color: #10c9c3;
+}
+
+/* first section */
+
+.section_aboute-us {
+  padding: 100px 0;
+}
+
+.about-us_content {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.about-us_content h2 {
+  color: #191919;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.about-us_content p {
+  margin-top: 41px;
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.08px;
+  text-align: center;
+}
+
+.about-us_content .aboute-us_img {
+  text-align: center;
+  margin-top: 37px;
+}
+
+/* skills */
+
+.section_prof-skills {
+  background-image: url(../img/skills.jpg);
+  background-size: cover;
+}
+
+.prof-skills_content {
+  padding: 164px 85px 164px 98px;
+  width: 683px;
+}
+
+.prof-skills_content h2 {
+  color: #171717;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.prof-skills_content p {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.percent_75,
+.percent_65,
+.percent_90 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.percent_75 .first {
+  height: 5px;
+  width: 75%;
+  background-color: #10c9c3;
+}
+
+.percent_75 .second {
+  height: 5px;
+  width: 25%;
+  background-color: #d8d8d8;
+}
+
+.percent_90 .first_2 {
+  height: 5px;
+  width: 90%;
+  background-color: #10c9c3;
+}
+
+.percent_90 .second_2 {
+  height: 5px;
+  width: 10%;
+  background-color: #d8d8d8;
+}
+
+.percent_65 .first_3 {
+  height: 5px;
+  width: 60%;
+  background-color: #10c9c3;
+}
+
+.percent_65 .second_3 {
+  height: 5px;
+  width: 40%;
+  background-color: #d8d8d8;
+}
+
+/* statistics */
+
+.section_statistics {
+  background-color: #10c9c3;
+  padding: 101px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.statistics_wrap {
+  display: flex;
+}
+
+.stasistics_img {
+  margin-right: 27px;
+}
+
+.stasistics_content p:nth-child(1) {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.54px;
+}
+
+.stasistics_content p:nth-child(2) {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* products */
+
+.product_section {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 0.5px solid silver;
+  border-bottom: 0.5px solid silver;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.product {
+  flex-basis: 25%;
+  height: 300px;
+  position: relative;
+}
+
+.product__hover-img {
+  position: absolute;
+  width: 47px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.product:hover>.product__hover-img {
+  display: block;
+}
+
+.product:hover {
+  opacity: 0.7;
+  display: block;
+}
+
+
+
+.product_section .loadmore {
+  flex-basis: 100%;
+  padding: 46px 0;
+  color: #8e8e8e;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* slides */
+
+.slide {
+  padding: 179px 200px;
+  background-color: #10c9c3;
+  position: relative;
+}
+
+#carouselExampleIndicators ol li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-bottom: 60px;
+}
+
+.slide-content p:first-child {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.slide-content p:last-child {
+  text-align: center;
+  margin-top: 35px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* brands */
+.brands {
+  padding: 64px 124px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand img {
+  display: block;
+}
+
+/* feedback
+
+
+*/
+
+/* footer */
+
+
+.footer {
+  padding: 99px 131px 98px 98px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #141414;
+}
+
+.firm {
+  flex-basis: 225px;
+}
+
+.contact {
+  flex-basis: 153px;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 368px;
+  text-align: left;
+}
+
+.menu_section_3 {
+  margin-left: 50px;
+}
+
+.author {
+  flex-basis: 624px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.disign {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 0.18px;
+}
+
+.footer p {
+  color: #bcbcbc;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.07px;
+}
+
+.footer p a {
+  color: #bcbcbc;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.07px;
+}
