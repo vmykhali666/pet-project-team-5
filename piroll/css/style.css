@@ -305,3 +305,29 @@ ul {
 
 /* home */
 
+.header-nav__home-page-list {
+  display: flex;
+  width: 215px;
+  justify-content: space-between;
+}
+
+.product--hover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.product--hover__icon {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.product--hover:hover {
+  background-color: #10c9c398;
+}
+.product--hover:hover .product--hover__icon {
+  opacity: 1;
+}
