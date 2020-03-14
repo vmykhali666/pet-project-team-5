@@ -259,6 +259,7 @@ ul {
   height: 300px;
 }
 
+
 .product_section .loadmore {
   flex-basis: 100%;
   padding: 46px 0;
@@ -301,3 +302,6 @@ ul {
   background-image: url("../img/products/rachit-tank-2cFZ_FB08UM-unsplash.jpg");
   background-size: 100%;
 }
+
+/* home */
+
