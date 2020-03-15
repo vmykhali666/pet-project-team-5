@@ -12,6 +12,8 @@ li {
 a {
   text-decoration: none;
 }
+
+/* контент блок  НАЧАЛО ! ! !*/
 .header-nav-block {
   display: flex;
   align-items: center;
@@ -166,6 +168,7 @@ textarea {
   font-family: Montserrat, sans-serif;
   margin-bottom: 20px;
 }
+/* Блок контент закончился  */
 .header__wrapper-block {
   padding: 0 96px;
   background-color: white;
