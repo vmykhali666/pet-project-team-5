@@ -257,6 +257,7 @@ ul {
 .product {
   flex-basis: 25%;
   height: 300px;
+  min-width: 300px;
 }
 
 
@@ -284,23 +285,23 @@ ul {
 }
 .product4 {
   background-image: url("../img/products/malte-wingen-PDX_a_82obo-unsplash.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .product5 {
   background-image: url("../img/products/mikkel-bech-yjAFnkLtKY0-unsplash.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .product6 {
   background-image: url("../img/products/norbert-levajsics-dUx0gwLbhzs-unsplash.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .product7 {
   background-image: url("../img/products/pepi-stojanovski-tulxmkTXmRw-unsplash.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .product8 {
   background-image: url("../img/products/rachit-tank-2cFZ_FB08UM-unsplash.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 /* home ////////////////////////////////////////////////////////////////*/
@@ -334,8 +335,9 @@ ul {
 }
 
 .title-section__text-block {
-  max-width: 512px;
+  max-width: 552px;
   text-align: center;
+  /* padding: 0 20px; */
 }
 
 .title-section__text-block h1 {
@@ -343,7 +345,8 @@ ul {
   font-family: Montserrat;
   font-size: 38px;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+  margin: 0 20px;
   letter-spacing: 0.38px;
 }
 
@@ -353,8 +356,10 @@ ul {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.09px;
+  line-height: 28px;
+  margin: 0 20px;
+  margin-right: -20px;
 }
-
 
 .product--hover {
   width: 100%;
@@ -375,4 +380,40 @@ ul {
 }
 .product--hover:hover .product--hover__icon {
   opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 769px) and (max-width: 979px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  
+  //CSS
+  
 }
