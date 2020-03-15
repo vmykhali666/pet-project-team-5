@@ -2,31 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="keywords" content="website, design, develop, " />
+    <meta
+      name="description"
+      content="We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps."
+    />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="All rights reserved" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Nunito+Sans:300,400,600,700,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+        <link rel="stylesheet" href="../css/style2.css" />
+        <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <div class="header__wrapper-block">
-      <div class="section_block">
+      <section class="section_block">
         <header class="header-section">
           <div class="header-logo">
-            <img src="../Icons/logo.png" alt="logo" />
+            <a href="#"><img src="../Icons/logo.png" alt="logo" /></a>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <nav class="header-nav">
-            <ul>
-              <li><a href="#" class="nav-link">HOME</a></li>
-              <li><a href="#" class="nav-link">ABOUTE</a></li>
-              <li><a href="#" class="nav-link">WORK</a></li>
-              <li><a href="#" class="nav-link">PROCESS</a></li>
-              <li><a href="#" class="nav-link">SERVICES</a></li>
-              <li><a href="#" class="nav-link">TESTIMONIALS</a></li>
-              <li><a href="#" class="nav-link">CONTACTS</a></li>
+            <ul class="menu">
+              <li class="menu_item"><a href="#" class="nav-link">HOME</a></li>
+              <li class="menu_item"><a href="#" class="nav-link">ABOUT</a></li>
+              <li class="menu_item"><a href="#" class="nav-link">WORK</a></li>
+              <li class="menu_item">
+                <a href="#" class="nav-link">PROCESS</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="nav-link">SERVICES</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="nav-link">TESTIMONIALS</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="nav-link">CONTACT</a>
+              </li>
             </ul>
           </nav>
         </header>
@@ -41,10 +86,10 @@
             Conact us
           </button>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="section_aboute-us">
+    <section class="section_aboute-us">
       <div class="about-us_content">
         <h2>Aboute us</h2>
         <p>
@@ -57,9 +102,9 @@
           <img src="../Icons/signature.svg" alt="signature" />
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section_prof-skills">
+    <section class="section_prof-skills">
       <div class="prof-skills_content">
         <h2>Professional Skills</h2>
         <p>UI/UX Design 75%</p>
@@ -78,9 +123,9 @@
           <div class="second_3"></div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section_statistics">
+    <section class="section_statistics">
       <div class="statistics_wrap">
         <div class="stasistics_img">
           <img src="../Icons/bag.png" alt="bag" />
@@ -117,18 +162,314 @@
           <p>HAPPY CLIENTS</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="product_section">
-      <div class="product1 product"></div>
-      <div class="product2 product"></div>
-      <div class="product3 product"></div>
-      <div class="product4 product"></div>
-      <div class="product5 product"></div>
-      <div class="product6 product"></div>
-      <div class="product7 product"></div>
-      <div class="product8 product"></div>
-      <button class="loadmore">load more</button>
-    </div>
+    <section class="product_section">
+      <div class=" product">
+        <img
+          src="../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <div class=" product">
+        <img
+          src="../img/products/devin-avery-bMH8ub9z1_U-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <div class=" product">
+        <img
+          src="../img/products/henry-ascroft-7OFnb7NOvjw-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <div class=" product">
+        <img
+          src="../img/products/malte-wingen-PDX_a_82obo-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <div class=" product">
+        <img
+          src="../img/products/mikkel-bech-yjAFnkLtKY0-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <div class=" product">
+        <img
+          src="../img/products/norbert-levajsics-dUx0gwLbhzs-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <div class=" product">
+        <img
+          src="../img/products/pepi-stojanovski-tulxmkTXmRw-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <div class=" product">
+        <img
+          src="../img/products/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
+          alt=""
+        />
+        <div class="product__hover-img">
+          <img src="../Icons/check.png" alt="check" />
+        </div>
+      </div>
+      <button class="loadmore">load more work</button>
+    </section>
+
+    <!--   -->
+    <section class="work-process section">
+        <div class="work-process__wrapper wrapper">
+            <h2 class="work-process__title section__title">Our Work Process</h2>
+            <p class="work-process__text section__text">Was years it seasons was there form he in in them together over
+                that, third sixth gathered female creeping bearing behold years.</p>
+            <!-- <video controls="controls" 
+       class="video-stream" 
+       x-webkit-airplay="allow" 
+       data-youtube-id="N9oxmRT2YWw" 
+       src="https://www.youtube.com/watch?v=hb7Q33ysCwI" width="1170" height="570"></video>
+        </div> -->
+            <iframe class="work-process__video" width="1170" height="570"
+                src="https://www.youtube-nocookie.com/embed/hb7Q33ysCwI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <section class="our-services">
+        <div class="our-services__wrapper">
+            <ul class="our-services__list">
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/diamond.png"
+                            alt="diamond">
+                    </div>
+                    <p class="our-services__title">ui / ux design</p>
+                    <p class="our-services__text">Be set fourth land god darkness make it wherein own</p>
+                </li>
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/arc.png" alt="arc">
+                    </div>
+                    <p class="our-services__title">web development</p>
+                    <p class="our-services__text">A she'd them bring void moving third she'd kind fill</p>
+                </li>
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/phone.png"
+                            alt="phone">
+                    </div>
+                    <p class="our-services__title">app / mobile</p>
+                    <p class="our-services__text">Dominion man second spirit he, earth they're creeping</p>
+                </li>
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/joy.png" alt="joy">
+                    </div>
+                    <p class="our-services__title">game design</p>
+                    <p class="our-services__text">Morning his saying moveth it multiply appear life be</p>
+                </li>
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/phone.png"
+                            alt="plane">
+                    </div>
+                    <p class="our-services__title">SEO / marketing</p>
+                    <p class="our-services__text">Give won't after land fill creeping meat you, may</p>
+                </li>
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/star.png"
+                            alt="star">
+                    </div>
+                    <p class="our-services__title">photography</p>
+                    <p class="our-services__text">Creepeth one seas cattle grass give moving saw give</p>
+                </li>
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/magic-wand.png"
+                            alt="magic-wand">
+                    </div>
+                    <p class="our-services__title">graphic design</p>
+                    <p class="our-services__text">Open, great whales air rule for, fourth life whales</p>
+                </li>
+                <li class="our-services__item">
+                    <div class="our-services__image-wrapper">
+                        <img class="our-services__image our-services__image--indent" src="../Icons/paint-bucket.png"
+                            alt="paint-bucket">
+                    </div>
+                    <p class="our-services__title">illustrations</p>
+                    <p class="our-services__text">Whales likeness hath, man kind for them air two won't</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="carousel_section">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="dot active"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+            class="dot"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="2"
+            class="dot"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slide-content">
+              <p>
+                “ Outstanding job and exceeded all expectations. It was a
+                pleasure to work with them on a sizable first project and am
+                looking forward to start the next one asap.”
+              </p>
+              <p>Michael Hopkins</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-content">
+              <p>
+                “ Outstanding job and exceeded all expectations. It was a
+                pleasure to work with them on a sizable first project and am
+                looking forward to start the next one asap.”
+              </p>
+              <p>Michael Hopkins</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-content">
+              <p>
+                “ Outstanding job and exceeded all expectations. It was a
+                pleasure to work with them on a sizable first project and am
+                looking forward to start the next one asap.”
+              </p>
+              <p>Michael Hopkins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <img src="../Icons/brands/1.png" alt="brand" />
+      <img src="../Icons/brands/2.png" alt="brand" />
+      <img src="../Icons/brands/3.png" alt="brand" />
+      <img src="../Icons/brands/4.png" alt="brand" />
+      <img src="../Icons/brands/5.png" alt="brand" />
+    </section>
+
+    <section class="feedback-section section">
+      <div class="feedback-form__wrapper wrapper">
+        <h2 class="feedback-form__title section__title">Need a project</h2>
+        <p class="feedback-form__text section__text">
+          Let us know what you're looking for in an agency. We'll take a look
+          and see if this could be the start of something beautiful.
+        </p>
+        <form class="feedback-form__form form" action="" method="">
+          <div class="form__inputs-wrapper">
+            <input
+              class="form__input form__name"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              class="form__input form__email"
+              type="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <input
+            class="form__input form__title"
+            type="text"
+            placeholder="Your Title"
+          />
+          <textarea
+            class="form__textarea"
+            name="comment"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Comment"
+          ></textarea>
+          <input
+            class="form__button button"
+            type="button"
+            name="button"
+            id=""
+            value="SEND MESSAGE"
+          />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="author">
+        <div class="firm">
+          <p class="disign">Piroll Design, Inc.</p>
+          <p>© 2017 Piroll. All rights reserved. Designed by robirurk.</p>
+        </div>
+        <div class="contact">
+          <p>hello@pirolltheme.com</p>
+          <p>+44 987 065 908</p>
+        </div>
+      </div>
+      <div class="footer_menu">
+        <div class="menu_section_1">
+          <p><a href="#">Projects</a></p>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Services</a></p>
+          <p><a href="#">Carreer</a></p>
+        </div>
+        <div class="menu_section_2">
+          <p><a href="#">News</a></p>
+          <p><a href="#">Events</a></p>
+          <p><a href="#">Conact</a></p>
+          <p><a href="#">Legals</a></p>
+        </div>
+        <div class="menu_section_3">
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Twitter</a></p>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">Dribbble</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
   </body>
 </html>
