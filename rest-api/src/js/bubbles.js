@@ -1,7 +1,6 @@
 const canvas = document.querySelector(".canvas");
 const context = canvas.getContext("2d");
 const reset = document.querySelector(".buttons-wrapper__input");
-let isDead = false;
 
 let allBubbles = [];
 
