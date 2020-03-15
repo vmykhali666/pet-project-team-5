@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-/* header */
+/* header ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .header__wrapper-block {
   padding: 0 96px;
@@ -96,7 +96,7 @@ ul {
   background-color: #10c9c3;
 }
 
-/* first section */
+/* first section ////////////////////////////////////////////////////////////////*/
 
 .section_aboute-us {
   padding: 100px 0;
@@ -131,7 +131,7 @@ ul {
   margin-top: 37px;
 }
 
-/* skills */
+/* skills ////////////////////////////////////////////////////////////////*/
 
 .section_prof-skills {
   background-image: url(../img/skills.jpg);
@@ -208,7 +208,7 @@ ul {
   background-color: #d8d8d8;
 }
 
-/* statistics */
+/* statistics ////////////////////////////////////////////////////////////////*/
 
 .section_statistics {
   background-color: #10c9c3;
@@ -245,13 +245,13 @@ ul {
   letter-spacing: 1.2px;
 }
 
-/* products */
+/* products ////////////////////////////////////////////////////////////////*/
 
 .product_section {
   display: flex;
   flex-wrap: wrap;
-  border-top: 0.5px solid silver;
-  border-bottom: 0.5px solid silver;
+  /* border-top: 0.5px solid silver;
+  border-bottom: 0.5px solid silver; */
 }
 
 .product {
@@ -303,7 +303,21 @@ ul {
   background-size: 100%;
 }
 
-/* home */
+/* home ////////////////////////////////////////////////////////////////*/
+
+.header__wrapper-block-home-page {
+  padding: 0 96px;
+  background-color: white;
+  background-image: none !important;
+  min-height: 100px;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.section_block-home-page {
+  padding: 35px 0;
+}
 
 .header-nav__home-page-list {
   display: flex;
@@ -311,22 +325,53 @@ ul {
   justify-content: space-between;
 }
 
+.title-section {
+  min-height: 313px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section__text-block {
+  max-width: 512px;
+  text-align: center;
+}
+
+.title-section__text-block h1 {
+  color: #171717;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  letter-spacing: 0.38px;
+}
+
+.title-section__text-block p {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.09px;
+}
+
+
 .product--hover {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
 }
 
 .product--hover__icon {
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
 }
 
 .product--hover:hover {
-  background-color: #10c9c398;
+  background-color: #10c9c3a6;
 }
 .product--hover:hover .product--hover__icon {
   opacity: 1;
