@@ -101,6 +101,11 @@ body {
     font-size: 50px;
     justify-content: center;
     line-height: 100px;
+    top: 53%;
+    left: 54%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    position: relative;
 }
 
 .feedback-form__wrapper {
