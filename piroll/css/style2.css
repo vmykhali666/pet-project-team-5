@@ -157,6 +157,10 @@ body {
     margin-top: 30px;
 }
 
+.form__button:hover {
+    background-color: #237270;
+}
+
 .our-services__wrapper {
     width: 100%;
     max-width: 1170px;
