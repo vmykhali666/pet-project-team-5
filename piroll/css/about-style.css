@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 98px;
+}
+
+.header-nav__ul a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: #141414;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.header-nav__li {
+  margin-left: 2em;
+}
+
+.header-nav__ul {
+  display: flex;
+}
+.header-nav__ul a:hover {
+  color: #10c9c3;
+}
+
+.img-photo {
+  background-image: url(../img/gitl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 25%;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+.img-background {
+  display: flex;
+  flex-direction: column;
+  padding: 119px 0;
+  opacity: -1;
+  transition: opacity 1s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-photo__h1 {
+  display: inline-block;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.img-photo__p {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+.img-background:hover {
+  opacity: 1;
+}
+
+.section_statistics {
+  background-color: #10c9c3;
+  padding: 101px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.statistics_wrap {
+  display: flex;
+}
+
+.stasistics_img {
+  margin-right: 27px;
+}
+
+.stasistics_content p:nth-child(1) {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.54px;
+}
+
+.stasistics_content p:nth-child(2) {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.aboute-us__section {
+  display: flex;
+}
+.picture {
+  background-image: url(../img/about-image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.section_aboute-us {
+  padding: 80px 0;
+  display: flex;
+}
+
+.about-us_content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 140px 143px 140px 86px;
+}
+
+.about-us_content h2 {
+  color: #171717;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 84px;
+}
+
+.about-us_content p {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-us_content:last-child p {
+  margin-bottom: 20px;
+}
+
+.need-project {
+  padding: 130px;
+}
+.need-project-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.need-project-wrapper__h2 {
+  display: inline-block;
+  margin: 0 auto;
+  color: #1d1d1d;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.need-project-wrapper__p {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.need-project-wrapper__form {
+  margin: 0 auto;
+}
+.need-project-wrapper__input {
+  padding: 22px 52px;
+  background-color: #10c9c3;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  border: 0;
+}
+
+.need-project-wrapper__input:hover {
+  background-color: darkslategray;
+}
+
+.footer {
+  padding: 99px 131px 98px 98px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #141414;
+}
+
+.firm {
+  flex-basis: 225px;
+}
+
+.contact {
+  flex-basis: 153px;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 368px;
+  text-align: left;
+}
+
+.menu_section_3 {
+  margin-left: 50px;
+}
+
+.author {
+  flex-basis: 624px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.disign {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 0.18px;
+}
+
+.footer p {
+  color: #bcbcbc;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.07px;
+}
+.disign {
+  color: #ffffff !important;
+  font-family: Montserrat !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px;
+  letter-spacing: 0.18px !important;
+}
+
+.footer p a {
+  color: #bcbcbc;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.07px;
+  display: block;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #10c9c3;
+}
+
+
+
+/* MEDIA */
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 979px) {
+.aboute-us__section {
+  flex-wrap: wrap;
+}
+
+ .picture {
+  /* background-image: url(../img/about-image.jpg); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  min-height: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+ }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .aboute-us__section {
+    flex-wrap: wrap;
+  }
+  
+   .picture {
+    /* background-image: url(../img/about-image.jpg); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    min-height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .aboute-us__section {
+    flex-wrap: wrap;
+  }
+  
+   .picture {
+    /* background-image: url(../img/about-image.jpg); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    min-height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .aboute-us__section {
+    flex-wrap: wrap;
+  }
+  
+   .picture {
+    /* background-image: url(../img/about-image.jpg); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    min-height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+   }
+}
