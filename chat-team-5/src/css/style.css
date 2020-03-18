@@ -1,53 +1,54 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Baloo 2', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo 2", cursive;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .chat {
-    background-color: grey;
+  background-color: grey;
 }
 
 .chat-section {
-    border: 2px solid white;
-    width: 100%;
-    max-width: 550px;
-    min-height: 503px;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 3px;
+  border: 2px solid white;
+  width: 100%;
+  max-width: 550px;
+  min-height: 503px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .chat-section__messages-wrapper {
-    background-color: white;
-    margin: 0 auto;
-    width: 100%;
-    height: 450px;
-    border-radius: 5px;
-    padding: 10px;
-    overflow: scroll;
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: scroll;
 }
 
 .chat-section__input-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .chat-section__input-text {
-    border: none;
-    border-radius: 5px;
-    width: 70%;
-    padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  padding-left: 10px;
 }
 
 .chat-section__span {
-    font-size: 16px;
-    color: white
+  user-select: none;
+  font-size: 16px;
+  color: white;
 }
