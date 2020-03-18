@@ -20,7 +20,7 @@ a {
   background-color: white;
   background-image: url(../img/header2img.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -52,6 +52,8 @@ ul {
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
+  transition: 0.8s ease;
+
 }
 
 .nav-link:hover {
@@ -98,12 +100,17 @@ ul {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   background-color: #10c9c3;
+  transition: 0.8s ease;
+
+  border: none;
 }
 
 .header-content button:hover {
   background-color: #0e9490;
+  border: none;
 
 }
+
 
 /* first section */
 
@@ -228,10 +235,15 @@ ul {
 
 .statistics_wrap {
   display: flex;
+  align-items: center;
 }
 
 .stasistics_img {
   margin-right: 27px;
+}
+
+.stasistics_content p {
+  margin-bottom: 0;
 }
 
 .stasistics_content p:nth-child(1) {
@@ -263,11 +275,50 @@ ul {
   border-bottom: 0.5px solid silver;
 }
 
-.product img {
-  width: 100%;
-  height: 100%;
+.product {
+  width: 25%;
+  min-height: 320px;
 }
 
+/* .product1 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+  background-size: 100% 100%;
+}
+
+.product2 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+  background-size: 100% 100%;
+}
+
+.product3 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+background-size: 100% 100%;
+}
+
+.product4 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+background-size: 100% 100%;
+}
+
+.product5 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+background-size: 100% 100%;
+}
+
+.product6 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+background-size: 100% 100%;
+}
+
+.product7 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+background-size: 100% 100%;
+}
+
+.product8 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+background-size: 100% 100%;
+}
 
 .product {
   flex-basis: 25%;
@@ -282,19 +333,90 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.8s ease;
   display: none;
+  
 }
 
-.product:hover>.product__hover-img {
+.product:hover > .product__hover-img {
+  transition: 0.8s ease-in;
   display: block;
 }
 
-.product:hover {
-  opacity: 0.7;
-  display: block;
+.product__hover-icon:hover {
+  transition: 0.8s ease;
+  /* background-color: #10c9c3a6; */
+
+/* } */
+
+/* .product:hover { */
+  /* transition: 0.8s ease; */
+  /* background-color: #10c9c3a6; */
+
+  /* opacity: 0.7; */
+  /* display: block; */
+/* } */
+
+
+
+/*  */
+
+
+.product--hover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s ease;
 }
 
+.product--hover__icon {
+  opacity: 0;
+  transition: 0.8s ease;
+}
 
+.product--hover:hover {
+  background-color: #10c9c3a6;
+}
+.product--hover:hover .product--hover__icon {
+  opacity: 1;
+}
+
+.product1 {
+  background-image: url("../img/products/alex-holyoake-ns-zrk_O-z4-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.product2 {
+  background-image: url("../img/products/devin-avery-bMH8ub9z1_U-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.product3 {
+  background-image: url("../img/products/henry-ascroft-7OFnb7NOvjw-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.product4 {
+  background-image: url("../img/products/malte-wingen-PDX_a_82obo-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.product5 {
+  background-image: url("../img/products/mikkel-bech-yjAFnkLtKY0-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.product6 {
+  background-image: url("../img/products/norbert-levajsics-dUx0gwLbhzs-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.product7 {
+  background-image: url("../img/products/pepi-stojanovski-tulxmkTXmRw-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.product8 {
+  background-image: url("../img/products/rachit-tank-2cFZ_FB08UM-unsplash.jpg");
+  background-size: 100% 100%;
+}
+
+/*  */
 
 .product_section .loadmore {
   flex-basis: 100%;
@@ -305,6 +427,10 @@ ul {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+}
+
+.loadmore {
+  transition: 0.8s ease;
 }
 
 .product_section .loadmore:hover {
@@ -422,11 +548,12 @@ ul {
 .footer p a {
   color: #bcbcbc;
   font-family: "Nunito Sans";
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: 0.07px;
   display: block;
+  padding: 6px;
 }
 
 
@@ -568,7 +695,10 @@ ul {
   }
 
   .brands {
-    padding: 50px 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    /* padding: 50px 40px; */
   }
 
   .footer {
@@ -589,6 +719,10 @@ ul {
 
   .footer_menu {
     flex-basis: 48%;
+  }
+
+  .menu_section_link {
+    transition: .8 ease;
   }
 
   .menu_section_3 {
@@ -763,24 +897,40 @@ ul {
   }
 
   .stasistics_img {
-    margin-right: 5px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    /* margin-right: 5px; */
+    /* margin-right: 5px; */
   }
 
   .statistics_wrap {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+  }
+
+  .stasistics_content {
+    width: 100%;
+  }
+
+  .stasistics_content p {
+    margin-bottom: 0;
   }
 
   .section_statistics {
     background-color: #10c9c3;
     padding: 30px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
   }
 
   .statistics_wrap {
+    text-align: center;
+    /* text-align: center; */
     margin-bottom: 30px;
     width: 50%;
   }
@@ -807,14 +957,19 @@ ul {
 
   .brands {
     display: flex;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    padding: 40px 0;
     justify-content: space-around;
+  }
+
+  .brands__image {
+    width: 100%;
   }
 
   .brands img {
     border-style: none;
     display: block;
-    width: 50px;
+    width: 35%;
   }
 
   .footer {
@@ -827,10 +982,6 @@ ul {
 
   .author {
     flex-basis: 0;
-  }
-
-  .footer_menu {
-    flex-basis: 20%;
   }
 
   .menu_section_3 {
@@ -849,6 +1000,7 @@ ul {
     flex-basis: 20%;
     margin-top: 20px;
   }
+
 }
 
 /* 
@@ -991,12 +1143,46 @@ ul {
     width: 100%;
   }
 
-  .section_statistics {
+
+  .stasistics_img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 13px;
+}
+
+  /* .section_statistics {
     background-color: #10c9c3;
     padding: 101px 30px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+  } */
+
+  .statistics_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ .stasistics_content {
+    width: 100%;
+  }
+ .stasistics_content p {
+    margin-bottom: 0;
+  }
+ .section_statistics {
+    background-color: #10c9c3;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+ .statistics_wrap {
+    text-align: center;
+    /* text-align: center; */
+    margin-bottom: 30px;
+    width: 50%;
   }
 
   .product {
@@ -1021,20 +1207,31 @@ ul {
 
   .brands {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex-direction: column; */
     align-items: center;
+    padding: 40px;
   }
 
   .brands img {
     border-style: none;
     display: block;
-    width: 100px;
-    margin-top: 30px;
+    width: 35%;
+    /* margin-top: 30px; */
   }
 
   .footer {
     padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 368px;
+    text-align: left;
+    margin: 0 auto;
   }
 
   .author {
@@ -1046,10 +1243,6 @@ ul {
     text-align: center;
   }
 
-  .footer {
-    flex-wrap: wrap;
-  }
-
   .menu_section_3 {
     margin-left: 0;
   }
@@ -1057,11 +1250,12 @@ ul {
   .footer p {
     color: #bcbcbc;
     font-family: "Nunito Sans";
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 10px;
+    line-height: 20px;
     letter-spacing: 0.07px;
   }
+
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
@@ -1199,9 +1393,51 @@ ul {
     width: 100%;
   }
 
-  .section_statistics {
+  .stasistics_img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 13px;
+}
+
+  /* .section_statistics {
     background-color: #10c9c3;
     padding: 101px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  } */
+
+  .statistics_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ .stasistics_content {
+    width: 100%;
+  }
+ .stasistics_content p {
+    margin-bottom: 0;
+  }
+ .section_statistics {
+    background-color: #10c9c3;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+ .statistics_wrap {
+    text-align: center;
+    /* text-align: center; */
+    margin-bottom: 30px;
+    width: 50%;
+  }
+
+
+  .section_statistics {
+    background-color: #10c9c3;
+    padding: 70px 30px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -1229,15 +1465,17 @@ ul {
 
   .brands {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    padding: 16px 0;
   }
 
   .brands img {
     border-style: none;
     display: block;
-    width: 100px;
+    width: 35%;
     margin-top: 30px;
   }
 
@@ -1258,16 +1496,30 @@ ul {
     flex-wrap: wrap;
   }
 
+    .footer_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 368px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
   .menu_section_3 {
     margin-left: 0;
   }
 
   .footer p {
+    /* color: #bcbcbc; */
+    /* font-family: "Nunito Sans"; */
+    /* font-size: 10px; */
+    /* font-weight: 400; */
+    /* line-height: 10px; */
+    /* letter-spacing: 0.07px; */
     color: #bcbcbc;
     font-family: "Nunito Sans";
-    font-size: 10px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 10px;
+    line-height: 22px;
     letter-spacing: 0.07px;
   }
 }
