@@ -7,6 +7,7 @@ const pushMessage = message => {
   for (let count = 0; count < message.length; count++) {
     let stringOut = makeMessage(message[count]);
     outPutList.append(stringOut);
+    stringOut.scrollIntoView({ block: "center", behavior: "smooth" });
   }
 };
 
@@ -20,6 +21,7 @@ socket.onmessage = function(event) {
   } else if (message.type === "message") {
     let stringOut = makeMessage(message.data);
     outPutList.append(stringOut);
+    stringOut.scrollIntoView({ block: "center", behavior: "smooth" });
   }
 };
 
@@ -36,6 +38,7 @@ const makeMessage = message => {
     `${message.text}`;
   input.value = "";
   input.placeholder = "Send message...";
+
   return stringOut;
 };
 
