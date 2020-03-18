@@ -30,6 +30,7 @@ ul {
     height: 450px;
     border-radius: 5px;
     padding: 10px;
+    overflow: scroll;
 }
 
 .chat-section__input-wrapper {
