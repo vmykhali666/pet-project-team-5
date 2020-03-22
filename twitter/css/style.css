@@ -8,17 +8,17 @@ p {
     margin: 0;
 }
 
-body {
-    background-color: black;
-}
-
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.container {
+.container-left {
+    background-color: #f5f8fa;
+}
+
+.container-fluid {
     background-color: #f5f8fa;
 }
 
@@ -46,6 +46,21 @@ a:hover {
 .font-size-14 {
     font-size: 14px;
 }
+
+.header {
+    height: 45px;
+    background-color: #f5f8fa;
+}
+
+.main-section {
+    padding: 0;
+}
+
+.bg-color-block {
+    background-color: #0084b4;
+    height: 344px;
+}
+
 
 
 /* first section */
@@ -171,7 +186,7 @@ a:hover {
 
 .users-suggest__user-name,
 .users-suggest__user-login {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .worldwide-trends {
@@ -193,4 +208,11 @@ a:hover {
 .footer__info-wrapper {
     width: 100%;
     max-width: 215px;
+}
+
+/*  */
+.tweets-main {
+    height: 1190px;
+    background-color: #4f6b7e;
+
 }
