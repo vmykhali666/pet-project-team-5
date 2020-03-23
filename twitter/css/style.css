@@ -1,19 +1,5 @@
 /* Common style */
 
-* {
-    box-sizing: border-box;
-}
-
-p {
-    margin: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .container-left {
     background-color: #f5f8fa;
 }
@@ -71,6 +57,7 @@ a:hover {
 }
 
 .personal-info__image-wrapper {
+    width: 210px;
     position: absolute;
     top: -144px;
 }
@@ -81,6 +68,7 @@ a:hover {
 
 .personal-info__user-handle {
     color: #0084b4;
+    line-height: 20px;
 }
 
 .circle-pseudo {
@@ -186,15 +174,22 @@ a:hover {
 
 .users-suggest__user-name,
 .users-suggest__user-login {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .worldwide-trends {
     margin-bottom: 20px;
 }
 
+
 .worldwide-trends__hashtag {
     color: #0084b4;
+}
+
+.worldwide-trends__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
