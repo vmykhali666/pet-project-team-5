@@ -151,6 +151,11 @@
   .personal-info__user-site {
     color: #0084b4;
   }
+
+  .users-suggest {
+      position: sticky;
+      top: 56px;
+  }
   
   .users-suggest__user-name,
   .users-suggest__user-login {
@@ -219,6 +224,8 @@
   
   .worldwide-trends {
     margin-bottom: 20px;
+    position: sticky;
+    top: 356px;
   }
   
   .worldwide-trends__hashtag {
@@ -232,6 +239,12 @@
   }
   
   /* footer  */
+  
+  .footer {
+    position: sticky;
+    top: 646px;
+  }
+
   .footer__text {
     color: #ccd6dd;
   }
