@@ -47,6 +47,14 @@ a:hover {
     font-size: 14px;
 }
 
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-28 {
+    font-size: 28px;
+}
+
 .header {
     height: 45px;
     background-color: #f5f8fa;
@@ -214,8 +222,7 @@ a:hover {
 
 .tweets-main {
     padding: 0;
-    /* height: 1190px; */
-    background-color: #34c58150;
+    /* background-color: #34c58150; */
 }
 
 .tweets-main__header {
@@ -223,15 +230,25 @@ a:hover {
 }
 
 .tweets-main__content {
-    background-color: aquamarine;
-    height: 1090px;
+    /* background-color: aquamarine; */
+    max-height: 1090px;
+    padding-bottom: 20px;
+    overflow: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.tweets-main__content::-webkit-scrollbar { 
+    width: 0px;  
+    background: transparent;
 }
 
 .tweets-main__footer {
-    height: 25px;
-    background-color: rgb(209, 87, 112);
+    position: absolute;
+    bottom: 0;
+    height: 45px;
+    background-color: #f5f8fa;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
