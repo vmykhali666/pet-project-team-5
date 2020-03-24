@@ -315,24 +315,47 @@
   
   /* хедер твитов конец */
   
-    .tweets-main__content {
-    /* background-color: aquamarine; */
-    max-height: 1090px;
-    padding-bottom: 20px;
+  .tweets-main__content {
+    padding-bottom: 10px;
+    height: 1090px;
     overflow: scroll;
     -ms-overflow-style: none; 
     scrollbar-width: none; 
-    }
+}
 
 .tweets-main__content::-webkit-scrollbar { 
     width: 0px;  
     background: transparent;
 }
 
-.tweets-main__footer {
-    position: absolute;
-    bottom: 0;
-    height: 45px;
+  .line-height-n {
+    line-height: normal;
+  }
+
+  .tweet-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tweet-footer__actions {
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .actions__reply,
+  .actions__rt,
+  .actions__fav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tweets-main__footer {
+    position: relative;
+    height: 35px;
+    margin-bottom: 20px;
     background-color: #f5f8fa;
     display: flex;
     align-items: center;
