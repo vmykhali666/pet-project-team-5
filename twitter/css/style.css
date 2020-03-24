@@ -372,3 +372,13 @@
     margin-right: 15px;
   }
 
+.tweets-main__footer__line {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+}
+
+.tweets-main__footer__logo {
+  margin-left: 15px;
+  margin-right: 15px;
+}
