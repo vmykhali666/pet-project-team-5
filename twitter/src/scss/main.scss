@@ -199,8 +199,8 @@ a:hover {
 }
 
 .users-suggest__image {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
 .sticky-position {
@@ -262,7 +262,7 @@ a:hover {
 
 .tw-btn {
   border: 1px solid #e1e8ed;
-  background: url("../icons/Follow_icon.png") no-repeat 8% 50%;
+  background: url("../img/icons/Follow_icon.png") no-repeat 8% 50%;
   padding: 4px 6px 4px 35px;
 }
 
@@ -378,12 +378,12 @@ a:hover {
   padding-bottom: 10px;
   max-height: 1050px;
   overflow: scroll;
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.tweets-main__content::-webkit-scrollbar { 
-  width: 0px;  
+.tweets-main__content::-webkit-scrollbar {
+  width: 0px;
   background: transparent;
 }
 
@@ -405,14 +405,13 @@ a:hover {
   justify-content: space-between;
 }
 
-
 .actions__reply,
 .actions__rt,
 .actions__fav,
 .actions__more {
   cursor: pointer;
   -webkit-transition: -webkit-transform 200ms;
-  transition: transform 200ms;  
+  transition: transform 200ms;
 }
 
 .actions__reply:hover {
@@ -442,7 +441,7 @@ a:hover {
 .fav-number {
   user-select: none;
   color: #8899a6;
-  opacity: 0.8;  
+  opacity: 0.8;
 }
 
 .tweet-footer__link {
@@ -463,7 +462,13 @@ a:hover {
   position: relative;
   bottom: 135px;
   height: 120px;
-  background: linear-gradient( #f5f8fa00, #f5f8fa2c, #f5f8faad, #f5f8fae0, #f5f8fa);
+  background: linear-gradient(
+    #f5f8fa00,
+    #f5f8fa2c,
+    #f5f8faad,
+    #f5f8fae0,
+    #f5f8fa
+  );
 }
 
 .tweets-main__footer__line {
@@ -477,7 +482,6 @@ a:hover {
   margin-right: 15px;
 }
 /* tweets END*/
-
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -522,18 +526,18 @@ a:hover {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-    .personal-info__image-wrapper {
-        width: 140px;
-        top: -166px;
-    }
+  .personal-info__image-wrapper {
+    width: 140px;
+    top: -166px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .personal-info__image-wrapper {
-        width: 150px;
-        top: -166px;
-    }
+  .personal-info__image-wrapper {
+    width: 150px;
+    top: -166px;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
