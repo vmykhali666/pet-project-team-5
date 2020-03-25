@@ -1,13 +1,11 @@
-/* хедер твитов конец */
-
 .tweets-main {
   padding: 0;
-  height: 1200px;
+  max-height: 1210px;
 }
 
 .tweets-main__content {
-  padding-bottom: 10px;
-  max-height: 1050px;
+  max-height: 1080px;
+  padding-bottom: 5rem;
   overflow: scroll;
   -ms-overflow-style: none; 
   scrollbar-width: none; 
@@ -84,7 +82,7 @@
 .tweets-main__footer {
   position: relative;
   height: 25px;
-  bottom: 135px;
+  bottom: 125px;
   background-color: #f5f8fa;
   display: flex;
   align-items: center;
@@ -92,7 +90,7 @@
 
 .tweets-footer-gradient {
   position: relative;
-  bottom: 135px;
+  bottom: 125px;
   height: 120px;
   background: linear-gradient( #f5f8fa00, #f5f8fa2c, #f5f8faad, #f5f8fae0, #f5f8fa);
 }
@@ -108,4 +106,3 @@
   margin-right: 15px;
 }
 /* tweets END*/
-
