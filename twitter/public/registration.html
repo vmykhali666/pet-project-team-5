@@ -29,79 +29,80 @@
         </nav>
       </div>
     </header>
+    <div class="main">
+      <main id="main">
+        <div class="container">
+          <form
+            action=""
+            class="registration-form col-xl-7 col-md-8 col-sm-12 col-12 mt-4 shadow"
+          >
+            <div class="form-content">
+              <h4 class="registration-title">Create an account</h4>
+              <div class="row withoutPadding">
+                <input
+                  type="text"
+                  class=" col-xl-5 col-12 mt-3 registration-form_input firstName "
+                  placeholder="First name"
+                />
+                <input
+                  type="text"
+                  class="col-xl-5 col-12 mt-3 ml-auto registration-form_input form_input-lastname lastName"
+                  placeholder="Last name"
+                />
+              </div>
+              <div class="row withoutPadding">
+                <input
+                  type="text"
+                  class="col-12 mt-3 registration-form_input email"
+                  placeholder="Email"
+                />
 
-    <main id="main">
-      <div class="container">
-        <form
-          action=""
-          class="registration-form col-xl-7 col-md-8 col-sm-12 col-12 mt-4 shadow"
-        >
-          <div class="form-content">
-            <h4 class="registration-title">Create an account</h4>
-            <div class="row withoutPadding">
-              <input
-                type="text"
-                class=" col-xl-5 col-12 mt-3 registration-form_input firstName "
-                placeholder="First name"
-              />
-              <input
-                type="text"
-                class="col-xl-5 col-12 mt-3 ml-auto registration-form_input form_input-lastname lastName"
-                placeholder="Last name"
-              />
+                <input
+                  type="text"
+                  class="col-12 mt-3 registration-form_input userName"
+                  placeholder="Username"
+                />
+                <p class="hints">
+                  Username must be at least three(3) chapters long and must can
+                  contain one underscore and number
+                </p>
+
+                <input
+                  type="text"
+                  class="col-12 mt-2 registration-form_input dateOfBirth"
+                  placeholder="Date of birth"
+                />
+                <input
+                  type="text"
+                  class="col-12 mt-3 registration-form_input password"
+                  placeholder="Password"
+                />
+                <p class="hints">
+                  Passworld must be at least six(6) chapters long and must
+                  contain one uppercase and number
+                </p>
+                <input
+                  type="text"
+                  class="col-12 mt-3 registration-form_input confirmPassword"
+                  placeholder="Confirm password"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill mt-4 form-button registrationBtn"
+                >
+                  SUBMIT
+                </button>
+              </div>
             </div>
-            <div class="row withoutPadding">
-              <input
-                type="text"
-                class="col-12 mt-3 registration-form_input email"
-                placeholder="Email"
-              />
-
-              <input
-                type="text"
-                class="col-12 mt-3 registration-form_input userName"
-                placeholder="Username"
-              />
-              <p class="hints">
-                Username must be at least three(3) chapters long and must can
-                contain one underscore and number
+            <footer class="form-footer col-12">
+              <p class="footer-link">
+                Already using twitter? <a href="./login.html">LOGIN</a>
               </p>
-
-              <input
-                type="text"
-                class="col-12 mt-2 registration-form_input dateOfBirth"
-                placeholder="Date of birth"
-              />
-              <input
-                type="text"
-                class="col-12 mt-3 registration-form_input password"
-                placeholder="Password"
-              />
-              <p class="hints">
-                Passworld must be at least six(6) chapters long and must contain
-                one uppercase and number
-              </p>
-              <input
-                type="text"
-                class="col-12 mt-3 registration-form_input confirmPassword"
-                placeholder="Confirm password"
-              />
-              <button
-                type="button"
-                class="btn btn-primary rounded-pill mt-4 form-button registrationBtn"
-              >
-                SUBMIT
-              </button>
-            </div>
-          </div>
-          <footer class="form-footer col-12">
-            <p class="footer-link">
-              Already using twitter? <a href="./login.html">LOGIN</a>
-            </p>
-          </footer>
-        </form>
-      </div>
-    </main>
+            </footer>
+          </form>
+        </div>
+      </main>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
+.main {
   background-color: #e5edf0;
 }
 
@@ -27,9 +27,6 @@ body {
   background: white;
 }
 
-.row {
-  min-width: 320px;
-}
 .no-style {
   display: block;
   text-decoration: none;
