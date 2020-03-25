@@ -1,93 +1,106 @@
 const reply = document.querySelectorAll('.actions__reply');
-const replySpan = document.querySelectorAll('.reply-number');
 const rt = document.querySelectorAll('.actions__rt');
-const rtSpan = document.querySelectorAll('.rt-number');
 const fav = document.querySelectorAll('.actions__fav');
-const favSpan = document.querySelectorAll('.fav-number');
 const more = document.querySelectorAll('.actions__more');
 
 
-let replyIsActive = false;
-let rtIsActive = false;
-let favIsActive = false;
-let moreIsActive = false;
+const isActive = {
+    reply: false,
+    rt: false,
+    fav: false,
+    more: false
+}
 
 function actionIncrement(action) {
+    if (action == undefined) {
+        return;
+    }
     let number = +action.textContent;
     return String(++number);
 }
 
 function actionDecrement(action) {
+
+    if (action == undefined) {
+        return;
+    }
     let number = +action.textContent;
     return String(--number);
 }
 
+function actionChange (action, et) {
+
+    let target;
+    if(et.className == `mr-2 actions__${action}`) {
+        target = et;
+    }
+    else if (et.parentNode.className == `mr-2 actions__${action}`) {
+        target = et.parentNode;
+    }
+
+    let filterChange;
+    switch (action) {
+        case 'reply':
+            filterChange = `filter: hue-rotate(30deg) saturate(20) contrast(100%);`
+            break;
+        case 'rt': 
+            filterChange = `filter: hue-rotate(230deg) saturate(20) contrast(100%);`
+            break;
+        case 'fav':
+            filterChange = `filter: hue-rotate(200deg) saturate(20) contrast(110%);`
+            break;
+        case 'more': 
+            filterChange = `filter: hue-rotate(0deg) saturate(20) contrast(100%);`
+            break;
+    }
+    if (isActive[action] == false) {
+        isActive[action] = true;
+        target.style.cssText = filterChange;
+        if (target.children[1] !== undefined) {
+            target.children[1].textContent = actionIncrement(target.children[1]);
+        }
+    }
+    else {
+        isActive[action] = false;
+        target.style.cssText = ``;
+        if (target.children[1] !== undefined) {
+            target.children[1].textContent = actionDecrement(target.children[1]);
+        }
+    }
+
+}
+
+function replyChange (event) {
+
+    actionChange('reply', event.target);
+}
 for(let i = 0; i < reply.length; i++) {
-    reply[i].addEventListener('click', replyColorChange)
-
-    function replyColorChange () {
-        if (replyIsActive == false) {
-            reply[i].style.cssText = `cursor: pointer;
-            filter: hue-rotate(30deg) saturate(20) contrast(110%);`;
-            replySpan[i].textContent = actionIncrement(replySpan[i]);
-            replyIsActive = true;
-        }
-        else {
-            reply[i].style.cssText = ``;
-            replySpan[i].textContent = actionDecrement(replySpan[i]);
-            replyIsActive = false;
-        }
-    }
+    reply[i].addEventListener('click', replyChange)
 }
 
-for(let i = 0; i <  rt.length; i++) {
-     rt[i].addEventListener('click',  rtColorChange)
-
-    function  rtColorChange () {
-        if ( rtIsActive == false) {
-             rt[i].style.cssText = `cursor: pointer;
-            filter: hue-rotate(230deg) saturate(15);`;
-             rtSpan[i].textContent = actionIncrement(rtSpan[i]);
-             rtIsActive = true;
-        }
-        else {
-             rt[i].style.cssText = ``;
-             rtSpan[i].textContent = actionDecrement(rtSpan[i]);
-             rtIsActive = false;
-        }
-    }
+function rtChange (event) {
+    
+    actionChange('rt', event.target);
+}
+for(let i = 0; i < rt.length; i++) {
+    rt[i].addEventListener('click', rtChange)
 }
 
+function favChange (event) {
+    
+    actionChange('fav', event.target);
+}
 for(let i = 0; i < fav.length; i++) {
-    fav[i].addEventListener('click', favColorChange)
-
-    function favColorChange () {
-        if (favIsActive == false) {
-            fav[i].style.cssText = `cursor: pointer;
-            filter: hue-rotate(200deg) saturate(20) contrast(110%);`;
-            favSpan[i].textContent = actionIncrement(favSpan[i]);
-            favIsActive = true;
-        }
-        else {
-            fav[i].style.cssText = ``;
-            favSpan[i].textContent = actionDecrement(favSpan[i]);
-            favIsActive = false;
-        }
-    }
+    fav[i].addEventListener('click', favChange)
 }
 
+function moreChange (event) {
+    
+    actionChange('more', event.target);
+}
 for(let i = 0; i < more.length; i++) {
-    more[i].addEventListener('click', moreColorChange)
-
-    function moreColorChange () {
-        if (moreIsActive == false) {
-            more[i].style.cssText = `cursor: pointer;
-            filter: hue-rotate(0deg) saturate(15);`;
-            moreIsActive = true;
-        }
-        else {
-            more[i].style.cssText = ``;
-            moreIsActive = false;
-        }
-    }
+    more[i].addEventListener('click', moreChange)
 }
+
+
+
