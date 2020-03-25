@@ -166,11 +166,11 @@ a:hover {
 }
 
 .personal-info__user-location {
-  background: url("../icons/Location_icon.png") no-repeat 1% 50%;
+  background: url("../img/icons/Location_icon.png") no-repeat 1% 50%;
 }
 
 .personal-info__user-site {
-  background: url("../icons/URL_icon.png") no-repeat 0 50%;
+  background: url("../img/icons/URL_icon.png") no-repeat 0 50%;
 }
 
 .personal-info__user-bio {
@@ -543,3 +543,9 @@ a:hover {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
+
+// @import "src/scss/components/login";
+
+// @import "src/scss/components/main_page";
+
+// @import "src/scss/components/registration";
