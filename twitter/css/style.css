@@ -91,7 +91,7 @@ a:hover {
   border: 1px solid #d8e2e8;
   border-radius: 5px;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 14px;
 }
 
 .font-size-12 {
@@ -196,6 +196,11 @@ a:hover {
 .users-suggest__link,
 .worldwide-trends__link {
   color: #0084b4;
+}
+
+.users-suggest__image {
+    width: 48px;
+    height: 48px;
 }
 
 .sticky-position {
