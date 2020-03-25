@@ -390,16 +390,24 @@ a:hover {
 
 /* tweet-footer */
 .tweet-footer {
+  display: -webkit-box;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .tweet-footer__actions {
   width: 220px;
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .actions__reply,
@@ -408,35 +416,45 @@ a:hover {
 .actions__more {
   cursor: pointer;
   -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
   transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
 }
 
 .actions__reply:hover {
-  filter: hue-rotate(30deg) saturate(8);
+  -webkit-filter: hue-rotate(30deg) saturate(8);
+          filter: hue-rotate(30deg) saturate(8);
 }
 
 .actions__rt:hover {
-  filter: hue-rotate(230deg) saturate(8);
+  -webkit-filter: hue-rotate(230deg) saturate(8);
+          filter: hue-rotate(230deg) saturate(8);
 }
 .actions__fav:hover {
-  filter: hue-rotate(200deg) saturate(8);
+  -webkit-filter: hue-rotate(200deg) saturate(8);
+          filter: hue-rotate(200deg) saturate(8);
 }
 
 .actions__more:hover {
-  filter: hue-rotate(0deg) saturate(8);
+  -webkit-filter: hue-rotate(0deg) saturate(8);
+          filter: hue-rotate(0deg) saturate(8);
 }
 
 .actions__reply:active,
 .actions__rt:active,
 .actions__fav:active,
 .actions__more:active {
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .reply-number,
 .rt-number,
 .fav-number {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #8899a6;
   opacity: 0.8;
 }
@@ -451,14 +469,25 @@ a:hover {
   height: 25px;
   bottom: 135px;
   background-color: #f5f8fa;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .tweets-footer-gradient {
   position: relative;
   bottom: 135px;
   height: 120px;
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(#f5f8fa00),
+    color-stop(#f5f8fa2c),
+    color-stop(#f5f8faad),
+    color-stop(#f5f8fae0),
+    to(#f5f8fa)
+  );
   background: linear-gradient(
     #f5f8fa00,
     #f5f8fa2c,
