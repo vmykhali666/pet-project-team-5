@@ -351,7 +351,7 @@ a:hover {
 }
 
 // .twets {
- 
+
 // }
 
 .twets:hover {
@@ -394,9 +394,9 @@ a:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .tweet-footer__actions {
@@ -405,9 +405,9 @@ a:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .actions__reply,
@@ -423,21 +423,21 @@ a:hover {
 
 .actions__reply:hover {
   -webkit-filter: hue-rotate(30deg) saturate(8);
-          filter: hue-rotate(30deg) saturate(8);
+  filter: hue-rotate(30deg) saturate(8);
 }
 
 .actions__rt:hover {
   -webkit-filter: hue-rotate(230deg) saturate(8);
-          filter: hue-rotate(230deg) saturate(8);
+  filter: hue-rotate(230deg) saturate(8);
 }
 .actions__fav:hover {
   -webkit-filter: hue-rotate(200deg) saturate(8);
-          filter: hue-rotate(200deg) saturate(8);
+  filter: hue-rotate(200deg) saturate(8);
 }
 
 .actions__more:hover {
   -webkit-filter: hue-rotate(0deg) saturate(8);
-          filter: hue-rotate(0deg) saturate(8);
+  filter: hue-rotate(0deg) saturate(8);
 }
 
 .actions__reply:active,
@@ -445,16 +445,16 @@ a:hover {
 .actions__fav:active,
 .actions__more:active {
   -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .reply-number,
 .rt-number,
 .fav-number {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #8899a6;
   opacity: 0.8;
 }
@@ -472,7 +472,7 @@ a:hover {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .tweets-footer-gradient {
@@ -481,7 +481,8 @@ a:hover {
   height: 120px;
   background: -webkit-gradient(
     linear,
-    left top, left bottom,
+    left top,
+    left bottom,
     from(#f5f8fa00),
     color-stop(#f5f8fa2c),
     color-stop(#f5f8faad),
