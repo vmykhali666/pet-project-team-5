@@ -8,10 +8,10 @@
 }
 
 /* header section START */
-.header {
-  font-size: 15px;
-  background-color: #f5f8fa;
-}
+// .header {
+//   font-size: 15px;
+//   background-color: #f5f8fa;
+// }
 
 .custom-a {
   font-weight: 600;
@@ -110,10 +110,10 @@ a:hover {
   font-size: 28px;
 }
 
-.header {
-  height: 45px;
-  background-color: #f5f8fa;
-}
+// .header {
+//   height: 45px;
+//   background-color: #f5f8fa;
+// }
 
 .main-section {
   padding: 0;
@@ -139,10 +139,6 @@ a:hover {
   width: 210px;
   position: absolute;
   top: -222px;
-}
-
-.img-thumbnail {
-  border-radius: 10px;
 }
 
 .personal-info__user-handle {
@@ -334,6 +330,7 @@ a:hover {
   border: 0;
   background-color: #f5f8fa;
   outline: 0;
+  border-bottom: 3px solid #f5f8fa;
 }
 
 .activity-border {
@@ -353,9 +350,9 @@ a:hover {
   border: 1px solid #3b88c3;
 }
 
-.twets {
-  border-bottom: 3px solid #f5f8fa;
-}
+// .twets {
+ 
+// }
 
 .twets:hover {
   border-bottom: 3px solid #0084b4;
