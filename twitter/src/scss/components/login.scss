@@ -1,4 +1,4 @@
-body {
+.main {
   background-color: #e5edf0;
 }
 .withoutPadding {
@@ -23,16 +23,16 @@ body {
   background-color: white;
   box-shadow: 0px 2px 4px -1px;
 }
-.nav {
-  padding: 5px 0;
-}
+// .nav {
+//   padding: 5px 0;
+// }
 .nav-header_logo {
   display: block;
   margin: 0 auto;
 }
 .nav-link_logo::before {
   content: "";
-  background-image: url("./IconsForTwitter/house.png");
+  background-image: url("../img/icons/house.png");
   background-size: 100% 100%;
   position: absolute;
   left: 7px;
@@ -61,20 +61,11 @@ body {
   line-height: 80px;
   background-color: #e5edf0;
 }
-.container {
-  position: relative;
-}
-.modalOpen {
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  position: relative;
-  z-index: 99;
-}
+
 .block {
   display: block;
 }
-h4 {
+.form-title {
   font-size: 2em;
 }
 @media (min-width: 1200px) {

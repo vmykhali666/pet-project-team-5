@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
+.main {
   background-color: #e5edf0;
 }
 
@@ -21,15 +21,12 @@ body {
   height: 30px;
 }
 
-.btn {
-  border-radius: 20px;
-  border: none;
-  background: white;
-}
+// .btn {
+//   border-radius: 20px;
+//   border: none;
+//   background: white;
+// }
 
-.row {
-  min-width: 320px;
-}
 .no-style {
   display: block;
   text-decoration: none;
@@ -38,9 +35,9 @@ body {
   color: white;
   text-decoration: none;
 }
-a {
-  display: block;
-}
+// a {
+//   display: block;
+// }
 @media (min-width: 1200px) {
 }
 @media (min-width: 992px) {
