@@ -24,44 +24,23 @@
                         <a class="mr-1" href="#" id="home">
                             <img src="../icons/Home_icon.png" alt="home">
                         </a>
-                        <label class="mb-0" for="home"><a class="text-decoration-none custom-a text-muted" href="#">Home</a></label>
-                    </li>
-                    <li class="d-flex flex-nowrap ml-3 align-items-center">
-                        <a class="mr-1" href="#" id="connect">
-                            <img src="../icons/Connect_icon.png" alt="connect">
-                        </a>
-                        <label class="mb-0" for="connect"><a class="text-decoration-none custom-a text-muted" href="#">Connect</a></label>
-                    </li>
-                    <li class="d-flex flex-nowrap ml-3 align-items-center">
-                        <a class="mr-1" href="#" id="discover">
-                            <img src="../icons/Discover_icon.png" alt="discover">
-                        </a>
-                        <label class="mb-0" for="discover"><a class="text-decoration-none custom-a text-muted" href="#">Discover</a></label>
-                    </li>
-                    <li class="d-flex flex-nowrap ml-3 align-items-center">
-                        <a class="mr-1" href="#" id="me">
-                            <img src="../icons/Me_icon.png" alt="me">
-                        </a>
-                        <label class="mb-0" for="me"><a class="text-decoration-none custom-a text-muted" href="#">Me</a></label>
+                        <span class="mb-0" for="home"><a class="text-decoration-none custom-a text-muted" href="#">Home</a></span>
                     </li>
                     <li class="mx-auto">
                         <a class="navbar-brand" href="#">
                             <img src="../icons/Twitter_logo.png" alt="logo">
                         </a>
                     </li>
+                    <li>
                     <div class="d-flex flex-nowrap custom-search-field align-items-center px-2">
-                        <input class="w-100 search-if text-light" type="search" placeholder="Search" aria-label="Search">
-                        <input type="image" src="../icons/search_icon@2x.png" class="custom-search-logo">
+                        <input class="w-100 search-if text-light px-2" type="search" placeholder="Search" aria-label="Search">
+                        <img src="../icons/search_icon@2x.png" class="custom-search-logo">
                     </div>
-                    <li class="d-flex flex-nowrap ml-3 align-items-center">
-                        <div class="p-1 d-flex align-items-center">
-                            <input type="image" src="../icons/DM_icon.png" class="">
-                        </div>
                     </li>
-                    <li class="d-flex flex-nowrap ml-3 align-items-center">
-                        <div class="p-1 d-flex align-items-center">
-                            <input type="image" src="../icons/Settings_icon.png" class="">
-                        </div>
+                    <li class="d-flex flex-nowrap align-items-center ml-3">
+                        <a class="mr-1" href="#" id="home">
+                            <span class="mb-0" for="home"><a class="text-decoration-none custom-a text-muted" href="#">Follow</a></span>
+                        </a>
                     </li>
                     <li class="d-flex flex-nowrap ml-3 align-items-center">
                         <div class="p-1 custom-input-btms d-flex align-items-center">
@@ -75,7 +54,7 @@
         <div class="bg-color-block"></div>
         <div class="main-wrapper container col-xl-9 col-lg-10 col-md-10">
             <div class="row justify-content-between">
-                <div class="col-xl-3 col-lg-3 col-md-4 container-left display">
+                <div class="col-xl-3 col-lg-4 col-md-4 container-left display">
                     <section class="personal-info">
                         <div class="personal-info__main-wrapper">
                         <div class="personal-info__image-wrapper mb-2">
@@ -102,7 +81,7 @@
                     </section>
                     <div class="sticky-position">
                     <section class="col users-suggest section">
-                        <div class="users-suggest__text-wrapper section__text-wrapper d-flex align-content-end pb-3 flex-sm-wrap">
+                        <div class="users-suggest__text-wrapper section__text-wrapper d-flex align-content-end pb-3">
                             <span class="font-weight-light">Who to follow</span>
                             <span class="padding-left-3 circle-pseudo"><a class="users-suggest__link font-size-12"
                                     href="#">Refresh</a>
@@ -112,10 +91,10 @@
                                         <span>
                         </div>
                         <div class="users-suggest__users-wrapper">
-                            <div class="users-suggest__user d-flex pb-3 align-items-center">
-                                <img class="users-suggest__image" src="../icons/GiulioBX_profile_pic.png" alt="">
+                            <div class="users-suggest__user d-flex pb-3">
+                                <img src="../icons/GiulioBX_profile_pic.png" alt="" width="48" height="48">
                                 <div class="users-suggest__wrap pl-3">
-                                    <div class="users-suggest__name-wrapper d-flex flex-wrap">
+                                    <div class="users-suggest__name-wrapper d-flex">
                                         <span class="users-suggest__user-name font-weight-bold">Giulio Bordonaro</span>
                                         <a class="users-suggest__user-login text-muted font-weight-light pl-1"
                                             href="#">@GiulioBx</a>
@@ -125,10 +104,10 @@
                                         value="Follow">
                                 </div>
                             </div>
-                            <div class="users-suggest__user d-flex pb-3 align-items-center">
-                                <img class="users-suggest__image" src="../icons/user2_profile_pic.png" alt="">
+                            <div class="users-suggest__user d-flex pb-3">
+                                <img src="../icons/user2_profile_pic.png" alt="" width="48" height="48">
                                 <div class="users-suggest__wrap pl-3">
-                                    <div class="users-suggest__name-wrapper d-flex flex-wrap">
+                                    <div class="users-suggest__name-wrapper d-flex">
                                         <span class="users-suggest__user-name font-weight-bold">Interesting User</span>
                                         <a class="users-suggest__user-login text-muted font-weight-light pl-1"
                                             href="#">@User</a>
@@ -138,10 +117,10 @@
                                         value="Follow">
                                 </div>
                             </div>
-                            <div class="users-suggest__user d-flex pb-3 align-items-center">
-                                <img class="users-suggest__image" src="../icons/user3_profile_pic.png" alt="">
+                            <div class="users-suggest__user d-flex pb-3">
+                                <img src="../icons/user3_profile_pic.png" alt="" width="48" height="48">
                                 <div class="users-suggest__wrap pl-3">
-                                    <div class="users-suggest__name-wrapper d-flex flex-wrap">
+                                    <div class="users-suggest__name-wrapper d-flex">
                                         <span class="users-suggest__user-name font-weight-bold">Other User</span>
                                         <a class="users-suggest__user-login text-muted font-weight-light pl-1"
                                             href="#">@OtherUser</a>
@@ -152,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="users-suggest__links-wrapper d-flex flex-wrap">
+                        <div class="users-suggest__links-wrapper d-flex">
                             <span><a class="users-suggest__link font-size-12" href="#">Popular accounts</a></span>
                             <span class="circle-pseudo"><a class="users-suggest__link font-size-12 padding-left-3"
                                     href="#">Find
@@ -160,7 +139,7 @@
                         </div>
                     </section>
                     <section class="col worldwide-trends section">
-                        <div class="worldwide-trends__wrapper section__text-wrapper d-flex pb-2 flex-sm-wrap">
+                        <div class="worldwide-trends__wrapper section__text-wrapper d-flex pb-2">
                             <span class="font-weight-light">Worldwide Trends</span>
                             <span class="padding-left-3 circle-pseudo"><a class="worldwide-trends__link font-size-12"
                                     href="#">Change</a></span>
@@ -199,7 +178,7 @@
                     </footer>
                 </div>
                 </div>
-                <div class="col-xl-9 col-lg-9 col-md-8 tweets-main">
+                <div class="col-xl-9 col-lg-8 col-md-8 tweets-main">
                     <div class="col-xl-12 col-lg-12 col-md-11 tweets-main__header mb-2">
                         <nav class="pb-0 px-0 navbar navbar-expand-lg navbar-light bg-light">
                             <div class="w-100" id="navbarNavDropdown">
