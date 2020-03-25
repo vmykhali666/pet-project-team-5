@@ -334,7 +334,7 @@
 
   .tweet-footer {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
   }
 
@@ -345,11 +345,8 @@
     justify-content: space-between;
   }
 
-  .actions__reply,
-  .actions__rt,
-  .actions__fav {
-    display: flex;
-    flex-direction: row;
+  .tweet-footer__action {
+    color: #8899a6;  
   }
 
   .tweets-main__footer {
