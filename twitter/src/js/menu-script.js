@@ -10,27 +10,29 @@ let email = document.querySelectorAll(".form-input_email");
 let password = document.querySelectorAll(".form-input_psw");
 let btn = document.querySelectorAll(".form-button");
 
-function requireFields() {
-  if (email.value === "" || password.value === "") {
+function requireFields(i) {
+  debugger
+  if (email[i].value === "" || password[i].value === "") {
     alert("Введите корректные данные. Все поля должны быть заполнены");
-  } else if (email.value === "admin" && password.value === "admin") {
+  } else if (email[i].value == "admin" && password[i].value == "admin") {
     location.href = "./content-page.html";
   } else {
     alert("Такого юзера не существует");
   }
 }
 
-email.forEach(() => {
-  if (email.keyCode === "13") {
-    requireFields();
+email.forEach(el => el.addEventListener("keydown", e => {
+  if (e.keyCode == 13) {
+    password[0].focus()
   }
-});
+}))
 
-password.forEach(() => {
-  if (password.keyCode === "13") {
-    requireFields();
-  }
-});
+password.forEach(el => el.addEventListener("keydown", e => {
+    if (e.keyCode == 13) {
+      requireFields(0)
+    }
+
+}))
 
 btn.forEach(el => el.addEventListener("click", requireFields));
 
