@@ -17,9 +17,11 @@ function IsActive() {
   this.more = false
 };
 
-while (tweets) {
-  let isActive = new IsActive()
-  tweetActions.push(isActive)
+if (tweets) {
+  for(let i = 0; i < tweets.length; i++) {
+    let isActive = new IsActive()
+    tweetActions.push(isActive)
+  }
 }
 
 function actionIncrement(action) {
