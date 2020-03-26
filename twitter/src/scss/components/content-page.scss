@@ -368,12 +368,12 @@ a:hover {
 
 .tweets-main {
   padding: 0;
-  height: 1200px;
+  max-height: 1210px;
 }
 
 .tweets-main__content {
-  padding-bottom: 10px;
-  max-height: 1050px;
+  max-height: 1080px;
+  padding-bottom: 5rem;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -408,6 +408,7 @@ a:hover {
   flex-direction: row;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  filter: none !important;
 }
 
 .actions__reply,
@@ -467,7 +468,7 @@ a:hover {
 .tweets-main__footer {
   position: relative;
   height: 25px;
-  bottom: 135px;
+  bottom: 125px;
   background-color: #f5f8fa;
   display: -webkit-box;
   display: flex;
@@ -477,7 +478,7 @@ a:hover {
 
 .tweets-footer-gradient {
   position: relative;
-  bottom: 135px;
+  bottom: 125px;
   height: 120px;
   background: -webkit-gradient(
     linear,
