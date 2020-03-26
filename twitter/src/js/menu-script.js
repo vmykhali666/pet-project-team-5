@@ -20,18 +20,6 @@ function requireFields() {
   }
 }
 
-email.forEach(() => {
-  if (email.keyCode === "13") {
-    requireFields();
-  }
-});
-
-password.forEach(() => {
-  if (password.keyCode === "13") {
-    requireFields();
-  }
-});
-
 btn.forEach(el => el.addEventListener("click", requireFields));
 
 module.exports = {};
