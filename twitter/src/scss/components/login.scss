@@ -1,5 +1,6 @@
-.main {
+.main-block {
   background-color: #e5edf0;
+  height: 100vh;
 }
 .withoutPadding {
   padding: 0;
@@ -42,6 +43,11 @@
 }
 
 .main-form {
+  padding: 30px 0 0 0;
+  background-color: white;
+}
+
+.form-contern {
   padding: 30px 60px;
 }
 .form-title {
