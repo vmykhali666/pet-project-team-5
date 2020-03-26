@@ -153,7 +153,7 @@ gulp.task("img", () => {
 
 gulp.task("fileInclude", callback => {
   gulp
-    .src([SRC + "/html/[^_]*.html"])
+    .src([SRC + "/html/home-page.html"])
     .pipe(
       fileInclude({
         prefix: "@@",
