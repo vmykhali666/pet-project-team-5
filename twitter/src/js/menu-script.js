@@ -1,14 +1,37 @@
-let email = document.querySelector(".form-input_email");
-let password = document.querySelector(".form-input_psw");
+/* eslint-disable no-restricted-globals */
+/* eslint-disable prefer-const */
+/* eslint-disable no-alert */
+/* eslint-disable consistent-return */
+/* eslint-disable eqeqeq */
+/* eslint-disable no-plusplus */
+/* eslint-disable prettier/prettier */
 
-let btn = document.querySelector(".form-button");
+let email = document.querySelectorAll(".form-input_email");
+let password = document.querySelectorAll(".form-input_psw");
+let btn = document.querySelectorAll(".form-button");
 
-btn.addEventListener("click", function(el) {
+function requireFields() {
   if (email.value === "" || password.value === "") {
-    return alert("Введите корректные данные. Все поля должны быть заполнены");
+    alert("Введите корректные данные. Все поля должны быть заполнены");
   } else if (email.value === "admin" && password.value === "admin") {
-    return (location.href = "../html/twitter-main-page-left-column.html");
+    location.href = "./content-page.html";
   } else {
-    return alert("Такого юзера не существует");
+    alert("Такого юзера не существует");
+  }
+}
+
+email.forEach(() => {
+  if (email.keyCode === "13") {
+    requireFields();
   }
 });
+
+password.forEach(() => {
+  if (password.keyCode === "13") {
+    requireFields();
+  }
+});
+
+btn.forEach(el => el.addEventListener("click", requireFields));
+
+module.exports = {};
