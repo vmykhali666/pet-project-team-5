@@ -6,13 +6,23 @@ const reply = document.querySelectorAll(".actions__reply");
 const rt = document.querySelectorAll(".actions__rt");
 const fav = document.querySelectorAll(".actions__fav");
 const more = document.querySelectorAll(".actions__more");
+const tweets = document.querySelectorAll(".tweet-footer__actions")
 
-const isActive = {
-  reply: false,
-  rt: false,
-  fav: false,
-  more: false
+let tweetActions = [];
+
+function IsActive() {
+  this.reply = false,
+  this.rt = false,
+  this.fav = false,
+  this.more = false
 };
+
+if (tweets) {
+  for(let i = 0; i < tweets.length; i++) {
+    let isActive = new IsActive()
+    tweetActions.push(isActive)
+  }
+}
 
 function actionIncrement(action) {
   if (action == undefined) {
@@ -30,14 +40,13 @@ function actionDecrement(action) {
   return String(--number);
 }
 
-function actionChange(action, et) {
+function actionChange(action, et, isActive) {
   let target;
   if (et.className == `mr-2 actions__${action}`) {
     target = et;
   } else if (et.parentNode.className == `mr-2 actions__${action}`) {
     target = et.parentNode;
   }
-
   let filterChange;
   switch (action) {
     case "reply":
@@ -68,29 +77,50 @@ function actionChange(action, et) {
   }
 }
 
+function chooseTweet (action, event) {
+  let parent;
+  let tFooter;
+  if(event.target.parentNode.className == `mr-2 actions__${action}`) {
+    parent = event.target.parentNode.parentNode
+  }
+  else {
+    parent = event.target.parentNode
+  }
+  for(let i = 0; i < tweets.length; i++) {
+    if(tweets[i] == parent) {
+      tFooter = tweetActions[i];
+    }
+  }
+  return tFooter
+}
+
 function replyChange(event) {
-  actionChange("reply", event.target);
+  let tFooter = chooseTweet("reply", event)
+  actionChange("reply", event.target, tFooter);
 }
 for (let i = 0; i < reply.length; i++) {
   reply[i].addEventListener("click", replyChange);
 }
 
 function rtChange(event) {
-  actionChange("rt", event.target);
+  let tFooter = chooseTweet("rt", event)
+  actionChange("rt", event.target, tFooter);
 }
 for (let i = 0; i < rt.length; i++) {
   rt[i].addEventListener("click", rtChange);
 }
 
 function favChange(event) {
-  actionChange("fav", event.target);
+  let tFooter = chooseTweet("fav",event)
+  actionChange("fav", event.target, tFooter);
 }
 for (let i = 0; i < fav.length; i++) {
   fav[i].addEventListener("click", favChange);
 }
 
 function moreChange(event) {
-  actionChange("more", event.target);
+  let tFooter = chooseTweet("more", event)
+  actionChange("more", event.target, tFooter);
 }
 for (let i = 0; i < more.length; i++) {
   more[i].addEventListener("click", moreChange);

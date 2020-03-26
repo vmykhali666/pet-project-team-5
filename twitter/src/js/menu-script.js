@@ -11,7 +11,6 @@ let password = document.querySelectorAll(".form-input_psw");
 let btn = document.querySelectorAll(".form-button");
 
 function requireFields(i) {
-  debugger
   if (email[i].value === "" || password[i].value === "") {
     alert("Введите корректные данные. Все поля должны быть заполнены");
   } else if (email[i].value == "admin" && password[i].value == "admin") {
