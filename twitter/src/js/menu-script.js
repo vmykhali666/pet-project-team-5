@@ -10,10 +10,11 @@ let email = document.querySelectorAll(".form-input_email");
 let password = document.querySelectorAll(".form-input_psw");
 let btn = document.querySelectorAll(".form-button");
 
-function requireFields(i) {
-  if (email[i].value === "" || password[i].value === "") {
+function requireFields() {
+  debugger
+  if (email[0].value === "" || password[0].value === "") {
     alert("Введите корректные данные. Все поля должны быть заполнены");
-  } else if (email[i].value == "admin" && password[i].value == "admin") {
+  } else if (email[0].value == "admin" && password[0].value == "admin") {
     location.href = "./content-page.html";
   } else {
     alert("Такого юзера не существует");
@@ -28,7 +29,7 @@ email.forEach(el => el.addEventListener("keydown", e => {
 
 password.forEach(el => el.addEventListener("keydown", e => {
     if (e.keyCode == 13) {
-      requireFields(0)
+      requireFields()
     }
 
 }))
