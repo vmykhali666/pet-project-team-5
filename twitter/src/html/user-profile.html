@@ -18,12 +18,115 @@
 
   <body>
     <section class="container-fluid main-section">
-      @@include("./components/header.html")
+      <header class="container-fluid sticky-top">
+        <nav class="navbar container navbar-expand-lg navbar-light bg-light px-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav text-muted w-100 main-header-menu-list">
+                <li class="d-flex flex-nowrap align-items-center ml-3 main-header-menu-item justify-content-center">
+                    <a class="mr-1" href="#" id="home">
+                        <img src="img/icons/Home_icon.png" alt="home">
+                    </a>
+                    <label class="mb-0" for="home"><a class="text-decoration-none custom-a text-muted" href="#">Home</a></label>
+                </li>
+              </ul>
+                <div class="mx-auto main-header-nav-logo">
+                    <a class="navbar-brand mx-auto" href="#">
+                        <img src="img/icons/Twitter_logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="navbar-nav text-muted justify-content-between list-width">
+                <li class="d-flex flex-nowrap custom-search-field align-items-center px-2">
+                    <input class="w-100 search-if text-light" type="search" placeholder="Search" aria-label="Search">
+                    <input type="image" src="img/icons/search_icon@2x.png" class="custom-search-logo">
+                </li>
+                <li class="d-flex flex-nowrap ml-3 align-items-center main-header-menu-icon">
+                    <div class="p-1 custom-input-btms d-flex align-items-center mx-auto">
+                        <input type="image" src="img/icons/Compose_icon.svg" class="">
+                    </div>
+                </li>
+                <li class="d-flex flex-nowrap ml-3 align-items-center main-header-menu-icon">
+                    <a href="#" class="p-1 d-flex align-items-center mx-auto">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+      <!-- @@include("./components/header.html") -->
       <div class="bg-color-block"></div>
       <div class="main-wrapper container col-xl-11 col-lg-10 col-md-10">
         <div class="row">
-          @@include('./components/left-sidebar.html')
-          <div class="col-xl-9 col-lg-9 col-md-8 tweets-main">
+          <div class="col-xl-3 col-lg-3 col-md-4 container-left display">
+            <section class="personal-info">
+                <div class="personal-info__main-wrapper">
+                <div class="personal-info__image-wrapper mb-2">
+                    <img src="img/Your-profile-pic-here.png" class="img-thumbnail" alt="Cinque Terre">
+                </div>
+                <h3 class="personal-info__user-name font-weight-light">Your Name Here</h3>
+                <span
+                    class="personal-info__user-handle font-weight-bold font-size-14 d-block mb-2">@YourHandleHere</span>
+                </div>
+                <p class="personal-info__user-bio text-muted font-size-14 mb-3">Your bio goes here in max 140
+                    characters.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut
+                    lab.</p>
+                <div class="mb-3 font-size-14 d-flex flex-wrap flex-column">
+                    <span class="personal-info__user-location text-muted pl-4">Your location</span>
+                    <a href="#" class="personal-info__user-site pl-4">yourwebsite.url</a>
+                </div>
+        
+                <div class="col tweet-name rounded">
+                    <input class="tweet-name__input form-control" type="text"
+                        placeholder="Tweet to Your Name here">
+                </div>
+            </section>
+            <div class="sticky-position">
+            <section class="col worldwide-trends section">
+                <div class="worldwide-trends__wrapper section__text-wrapper d-flex pb-2 flex-sm-wrap">
+                    <span class="font-weight-light">Worldwide Trends</span>
+                    <span class="padding-left-3 circle-pseudo"><a class="worldwide-trends__link font-size-12"
+                            href="#">Change</a></span>
+                </div>
+                <ul class="worldwide-trends__list font-size-14">
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag"
+                            href="#">#NewTwitter</a></li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag" href="#">#GBX</a>
+                    </li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag"
+                            href="#">#graphicdesign</a></li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag" href="#">#mockup</a>
+                    </li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag" href="#">#layout</a>
+                    </li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag" href="#">#PSD</a>
+                    </li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag"
+                            href="#">#FreeTemplate</a></li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag" href="#">#Lorem</a>
+                    </li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag" href="#">#ipsum</a>
+                    </li>
+                    <li class="worldwide-trends__item"><a class="worldwide-trends__hashtag" href="#">#amet</a>
+                    </li>
+                </ul>
+            </section>
+            <footer class="footer-left d-flex flex-wrap pl-2 pr-3 font-size-12">
+                <div class="footer__info-wrapper d-flex flex-wrap justify-content-between">
+                    <span class="footer__text">@2014 Twitter</span>
+                    <a class="footer__text " href="#">About</a>
+                    <a class="footer__text" href="#">Help</a>
+                    <a class="footer__text" href="#">Ads info</a>
+                </div>
+                <span class="footer__text">Twitter 2014 GUI PSD by @GiulioBx - v.1.1</span>
+            </footer>
+        </div>
+        </div>
+          <!-- @@include('./components/left-sidebar.html') -->
+          <div class="col-xl-9 col-lg-8 col-md-8 tweets-main">
             <div class="col-xl-12 col-lg-12 col-md-11 tweets-main__header mb-2">
               <nav
                 class="pb-0 px-0 navbar navbar-expand-lg navbar-light bg-light"
@@ -85,8 +188,9 @@
                 </div>
               </nav>
             </div>
+            <div class="row flex-wrap">
             <div
-              class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 tweets-main__content"
+              class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12 tweets-main__content"
             >
               <!-- tweet -->
               <div class="card mb-2 card--custom">
@@ -309,6 +413,66 @@
                 </div>
               </div>
             </div>
+            <section class="col-xl-4 users-suggest section">
+              <div class="users-suggest__text-wrapper section__text-wrapper d-flex align-content-end pb-3">
+                  <span class="font-weight-light">Who to follow</span>
+                  <span class="padding-left-3 circle-pseudo"><a class="users-suggest__link font-size-12"
+                          href="#">Refresh</a>
+                      <span>
+                          <span class="padding-left-3 circle-pseudo"><a
+                                  class="users-suggest__link font-size-12" href="#">View all</a>
+                              <span>
+              </div>
+              <div class="users-suggest__users-wrapper">
+                  <div class="users-suggest__user d-flex pb-3 align-items-center">
+                      <img class="users-suggest__image" src="img/icons/GiulioBX_profile_pic.png" alt="">
+                      <div class="users-suggest__wrap pl-3">
+                          <div class="users-suggest__name-wrapper d-flex flex-wrap">
+                              <span class="users-suggest__user-name font-weight-bold">Giulio Bordonaro</span>
+                              <a class="users-suggest__user-login text-muted font-weight-light pl-1"
+                                  href="#">@GiulioBx</a>
+                          </div>
+                          <input type="button"
+                              class="users-suggest__follow-btn tw-btn btn font-weight-bold font-size-12 mt-1"
+                              value="Follow">
+                      </div>
+                  </div>
+                  <div class="users-suggest__user d-flex pb-3 align-items-center">
+                      <img class="users-suggest__image" src="img/icons/user2_profile_pic.png" alt="">
+                      <div class="users-suggest__wrap pl-3">
+                          <div class="users-suggest__name-wrapper d-flex flex-wrap">
+                              <span class="users-suggest__user-name font-weight-bold">Interesting User</span>
+                              <a class="users-suggest__user-login text-muted font-weight-light pl-1"
+                                  href="#">@User</a>
+                          </div>
+                          <input type="button"
+                              class="users-suggest__follow-btn tw-btn btn font-weight-bold font-size-12 mt-1"
+                              value="Follow">
+                      </div>
+                  </div>
+                  <div class="users-suggest__user d-flex pb-3 align-items-center">
+                      <img class="users-suggest__image" src="img/icons/user3_profile_pic.png" alt="">
+                      <div class="users-suggest__wrap pl-3">
+                          <div class="users-suggest__name-wrapper d-flex flex-wrap">
+                              <span class="users-suggest__user-name font-weight-bold">Other User</span>
+                              <a class="users-suggest__user-login text-muted font-weight-light pl-1"
+                                  href="#">@OtherUser</a>
+                          </div>
+                          <input type="button"
+                              class="users-suggest__follow-btn tw-btn btn font-weight-bold font-size-12 mt-1"
+                              value="Follow">
+                      </div>
+                  </div>
+              </div>
+              <div class="users-suggest__links-wrapper d-flex flex-wrap">
+                  <span><a class="users-suggest__link font-size-12" href="#">Popular accounts</a></span>
+                  <span class="circle-pseudo"><a class="users-suggest__link font-size-12 padding-left-3"
+                          href="#">Find
+                          friends</a></span>
+              </div>
+          </section>
+            <!-- @@include('./components/right-sidebar.html') -->
+            </div>
             <!-- Tweets footer -->
             <div class="col-12 tweets-footer-gradient"></div>
             <div class="col-12 tweets-main__footer">
@@ -324,7 +488,7 @@
         </div>
       </div>
     </section>
-    @@include('./components/right-sidebar.html')
+
     <script src="./js/index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
