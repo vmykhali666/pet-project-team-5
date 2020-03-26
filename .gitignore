@@ -1,4 +1,6 @@
 .idea
+node_modules
+debug
 *.iml
 out
 gen
@@ -7,5 +9,3 @@ node_modules
 .DS_Store
 .nyc_output
 coverage
-news-feed.css
-news-feed.html
