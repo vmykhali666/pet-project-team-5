@@ -37,7 +37,6 @@
   border: 0;
   background-color: #a3acb2;
   border-radius: 60px;
-  width: 50%;
 }
 
 .search-if {
@@ -80,11 +79,15 @@
 }
 
 .main-header-menu-list {
-  width: 32%;
+  min-width: 35%;
 }
 
 .list-width {
-  width: 39%;
+  min-width: 39%;
+}
+
+.header-main-navigation {
+  display: flex;
 }
 
 /* header section END! */
@@ -326,6 +329,7 @@ a:hover {
   font-size: 11px;
   font-weight: 500;
   line-height: 20px;
+  border-bottom: none;
 }
 
 .nav-twets-menu label {
@@ -512,6 +516,8 @@ a:hover {
   );
 }
 
+
+
 .tweets-main__footer__line {
   width: 100%;
   height: 1px;
@@ -538,6 +544,10 @@ a:hover {
     position: absolute;
     top: 10px;
     right: 0;
+  }
+
+  .tweets-tabs-wrapper {
+    justify-content: center !important;
   }
 
   // .main-header-nav-logo {
@@ -570,6 +580,15 @@ a:hover {
 
   .users-suggest {
     display: none;
+    }
+
+    .header-main-nav {
+      // padding: auto 0;
+    }
+
+    .nav-twets-menu {
+      justify-content: space-around;
+      width: 84%;
     }
 }
 
@@ -614,12 +633,16 @@ a:hover {
   }
 
   .custom-search-field {
-    width: 70%;
+    width: 170px;
     margin: 10px auto;
   }
 
   .users-suggest {
     display: none;
+    }
+
+    .header-main-nav {
+      // padding: auto 0;
     }
 }
 
