@@ -24,9 +24,9 @@ const gulpUglify = require("gulp-uglify");
 const gulpSourcemaps = require("gulp-sourcemaps");
 const gulpBabel = require("gulp-babel");
 
-const SRC = "./src";
+const SRC = "./twitter/src";
 const BUILD = "./build";
-const PUBLIC = "./public";
+const PUBLIC = "./twitter/public";
 const paths = {
   build: {
     root: `${BUILD}/`,
@@ -99,9 +99,9 @@ const styles = (paths, outputFilename, outputPath) => {
 const buildScripts = (mode = "development") => done => {
   let streamMode;
   if (mode === "development") {
-    streamMode = require("./webpack/webpack.dev.js");
+    streamMode = require("./twitter/webpack/webpack.dev.js");
   } else if (mode === "production") {
-    streamMode = require("./webpack/webpack.prod.js");
+    streamMode = require("./twitter/webpack/webpack.prod.js");
   } else {
     streamMode = undefined;
   }
