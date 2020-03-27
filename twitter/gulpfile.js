@@ -45,13 +45,15 @@ const paths = {
     scss: `${SRC}/scss/**/*.scss`,
     js: `${SRC}/js/**/*.js`,
     img: `${SRC}/img/**/*`,
-    html: `${SRC}/html/*.html`
+    components:`${SRC}/html/components/*.html`,
+    html: `${SRC}/html/*.html`,
   },
   reloadWatch: {
     css: `${BUILD}/**/*.css`,
     js: `${BUILD}/**/*.js`,
     img: `${BUILD}/img/**/*`,
-    html: `${BUILD}/*.html`
+    html: `${BUILD}/*.html`,
+    all:`${BUILD}/*`
   }
 };
 
@@ -153,7 +155,7 @@ gulp.task("img", () => {
 
 gulp.task("fileInclude", callback => {
   gulp
-    .src([SRC + "/html/[^_]*.html"])
+    .src([SRC + "/html/**/[^_]*.html"])
     .pipe(
       fileInclude({
         prefix: "@@",
@@ -175,6 +177,7 @@ gulp.task(
 );
 
 gulp.task("watch", () => {
+  gulp.watch(paths.compileWatch.components, gulp.series("fileInclude"));
   gulp.watch(paths.compileWatch.html, gulp.series("fileInclude"));
   gulp.watch(paths.compileWatch.scss, gulp.series("styles"));
   gulp.watch(paths.compileWatch.js, gulp.series("scripts"));
@@ -191,7 +194,7 @@ gulp.task("serve", () => {
   browserSync.watch(paths.reloadWatch.css).on("change", reload);
   browserSync.watch(paths.reloadWatch.js).on("change", reload);
   browserSync.watch(paths.reloadWatch.img).on("change", reload);
-  browserSync.watch(paths.reloadWatch.html).on("change", reload);
+  browserSync.watch(paths.reloadWatch.all).on("change", reload);
 });
 
 gulp.task("default", gulp.series("build", gulp.parallel("watch", "serve")));
