@@ -14,7 +14,7 @@ function requireFields() {
   if (email[0].value === "" || password[0].value === "") {
     alert("Введите корректные данные. Все поля должны быть заполнены");
   } else if (email[0].value == "admin" && password[0].value == "admin") {
-    location.href = "./_first-version-user-page.html";
+    location.href = "./home-page.html";
   } else {
     alert("Такого юзера не существует");
   }
