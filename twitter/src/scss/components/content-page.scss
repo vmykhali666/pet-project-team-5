@@ -1,6 +1,7 @@
 /* Common style */
 .container-left {
   background-color: #f5f8fa;
+  display: block;
 }
 
 .container-fluid {
@@ -36,6 +37,7 @@
   border: 0;
   background-color: #a3acb2;
   border-radius: 60px;
+  width: 50%;
 }
 
 .search-if {
@@ -77,6 +79,14 @@
   background-color: #71bad5;
 }
 
+.main-header-menu-list {
+  width: 32%;
+}
+
+.list-width {
+  width: 39%;
+}
+
 /* header section END! */
 
 a:hover {
@@ -92,6 +102,7 @@ a:hover {
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 14px;
+  min-height: 200px;
 }
 
 .font-size-12 {
@@ -205,10 +216,9 @@ a:hover {
   top: 56px;
 }
 
-/* .users-suggest {
-      position: sticky;
-      top: 56px;
-  } */
+.users-suggest {
+  display: block;
+  }
 
 .tweet-name {
   border: 1px solid #a3d1e3;
@@ -362,6 +372,9 @@ a:hover {
   color: #0084b4;
 }
 
+.who-to-follow-display {
+  display: flex;
+}
 /* хедер твитов конец */
 
 /* хедер твитов конец */
@@ -527,11 +540,11 @@ a:hover {
     right: 0;
   }
 
-  .main-header-nav-logo {
-    position: absolute;
-    top: 7px;
-    right: 44%;
-  }
+  // .main-header-nav-logo {
+  //   position: absolute;
+  //   top: 7px;
+  //   right: 44%;
+  // }
 
   .main-header-menu-list {
     display: flex;
@@ -554,6 +567,10 @@ a:hover {
     width: 80%;
     margin: 10px auto;
   }
+
+  .users-suggest {
+    display: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -575,11 +592,11 @@ a:hover {
     height: 150px;
   }
 
-  .main-header-nav-logo {
-    position: absolute;
-    top: 7px;
-    right: 44%;
-  }
+  // .main-header-nav-logo {
+  //   position: absolute;
+  //   top: 7px;
+  //   right: 44%;
+  // }
 
   .main-header-menu-list {
     display: flex;
@@ -600,6 +617,10 @@ a:hover {
     width: 70%;
     margin: 10px auto;
   }
+
+  .users-suggest {
+    display: none;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -607,6 +628,10 @@ a:hover {
   .personal-info__image-wrapper {
     width: 140px;
     top: -166px;
+  }
+
+  .container-left {
+    display: none;
   }
 
   .bg-color-block {
@@ -633,11 +658,18 @@ a:hover {
     margin: 10px auto;
   }
 
-  .main-header-nav-logo {
-    position: absolute;
-    top: 7px;
-    right: 45%;
-  }
+  // .main-header-nav-logo {
+  //   position: absolute;
+  //   top: 7px;
+  //   right: 45%;
+  // }
+
+  .bg-color-block {
+    display: none;
+    }
+    .users-suggest {
+      display: none;
+      }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -646,8 +678,14 @@ a:hover {
     width: 150px;
     top: -166px;
   }
+  .users-suggest {
+    display: none;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+ .who-to-follow-display {
+   display: none;
+ }
 }
