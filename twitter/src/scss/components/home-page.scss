@@ -1,0 +1,40 @@
+.user-card-wrapper {
+    height: 160px;
+}
+
+.user-card {
+    border: 1px solid red;
+    border-radius: 0.3rem;
+}
+.user-card__profile-bg {
+    background-color: #0084b4;
+    height: 100px;
+}
+
+.user-card__profile-white {
+    background-color: white;
+    height: 60px;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 575px) {
+    .user-card-wrapper {
+        display: none;
+    }
+    
+}
+  
+@media (min-width: 576px) and (max-width: 767px) {
+    .user-card-wrapper {
+        display: none;
+    }
+    
+}
+  
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {}
