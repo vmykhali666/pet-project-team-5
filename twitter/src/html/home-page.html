@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>your page</title>
+    <title>Home page</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,18 +14,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="main-wrapper container col-xl-11 col-lg-10 col-md-10">
+    <section class="container-fluid main-section">
       @@include('./components/header.html')
-      <div class="row">
-        @@include('./components/left-sidebar.html')
-        <div class="col-xl-9 col-lg-9 col-md-8 tweets-main">
-          <div class="row flex-wrap align-items-start tab-content"> 
-            @@include('./components/main-column.html')
-            @@include('./components/right-sidebar.html')
+      <div class="main-wrapper container col-xl-11 col-lg-10 col-md-10">
+        <div class="row">
+          @@include('./components/user-card.html')
+          <div class="col-xl-9 col-lg-9 col-md-8 tweets-main">
+            <div class="row flex-wrap align-items-start tab-content"> 
+              @@include('./components/main-column.html')
+              @@include('./components/right-sidebar.html')
             </div>
+            @@include('./components/footer.html')
+          </div>
         </div>
       </div>
-      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
