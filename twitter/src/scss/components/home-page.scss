@@ -1,10 +1,7 @@
-.user-card-wrapper {
-    height: 160px;
-}
-
 .user-card {
+    height: 160px;
     border: 1px solid red;
-    border-radius: 0.3rem;
+    border-radius: 0.25rem;
 }
 .user-card__profile-bg {
     background-color: #0084b4;
@@ -33,7 +30,7 @@
   
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-    
+
 }
 
 /* // Large devices (desktops, 992px and up) */
