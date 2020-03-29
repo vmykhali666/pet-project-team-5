@@ -459,6 +459,7 @@ a:hover {
 .nav-twets-menu label {
   font-size: 15px; }
 
+
 .activity-border {
   border-bottom: 3px solid #f5f8fa; }
 
@@ -694,6 +695,10 @@ a:hover {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .tweets-nav-head-list {
+    padding-right: 8vw !important;
+  }
+
   .who-to-follow-display {
     display: none; } }
 
