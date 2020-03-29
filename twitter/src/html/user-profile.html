@@ -23,9 +23,11 @@
 
           @@include('./components/left-sidebar.html')
           <div class="col-xl-9 col-lg-8 col-md-12 tweets-main">
-            <div class="col-xl-10 col-lg-12 col-md-12 tweets-main__header mb-2 px-0">
+            <div class="col-xl-12 col-lg-12 col-md-12 tweets-main__header mb-2 px-0">
+              <section class="container-fluid">
+              <div class="row">
               <nav
-                class="pb-0 px-0 navbar navbar-expand-lg navbar-light bg-light"
+                class="col pb-0 px-0 navbar navbar-expand-lg navbar-light bg-light tweets-nav-head-list"
               >
                 <div class="tweets-tabs-wrapper w-100 d-flex justify-content-between flex-wrap" id="navbarNavDropdown">
                   <ul
@@ -81,8 +83,7 @@
                         data-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
-                      >
-                        <img src="img/icons/Settings_icon.png" alt="" />
+                      >Edit Profile
                       </a>
                     </li>
                     <li>
@@ -92,6 +93,8 @@
                 </div>
               </nav>
             </div>
+          </section>
+          </div>
             <div class="row flex-wrap align-items-start tab-content">
  
             @@include('./components/main-column.html')
